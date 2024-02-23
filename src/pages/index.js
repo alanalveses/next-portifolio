@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
-import AnimetedText from "@/components/AnimetedText";
+import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
             </div>
 
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimetedText
+              <AnimatedText
                 text="Transformando sonhos em realidade com código, design e amor."
                 className="!text-6xl text-left"
               />

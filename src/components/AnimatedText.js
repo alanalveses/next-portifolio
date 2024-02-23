@@ -28,7 +28,7 @@ const singleWord = {
   },
 };
 
-const AnimetedText = ({ text, className = "" }) => {
+const AnimatedText = ({ text, className = "" }) => {
   return (
     <div
       className="w-full mx-auto py-2 flex items-center justify-center text-center 
@@ -55,4 +55,4 @@ const AnimetedText = ({ text, className = "" }) => {
   );
 };
 
-export default AnimetedText;
+export default AnimatedText;
