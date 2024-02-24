@@ -5,6 +5,7 @@ import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
+import ContactShortcut from "@/components/ContactShortcut";
 
 export default function Home() {
   return (
@@ -61,6 +62,8 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+
+        <ContactShortcut/>
       </main>
     </>
   );

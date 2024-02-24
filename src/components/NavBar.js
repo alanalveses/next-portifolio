@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon, PinterestIcon, InstagramIcon, Whats, Whatsltest, Instagram, Instagramsvg } from "./Icons"
+import { GithubIcon, LinkedInIcon, PinterestIcon, WhatsAppIcon } from "./Icons"
 import{motion} from "framer-motion" 
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -52,21 +52,13 @@ const NavBar = () => {
                 >
                     <LinkedInIcon/>
                 </motion.a>
-
-                <motion.a href="https://web.facebook.com/?_rdc=1&_rdr" target={"_blank"}
-                className="w-6 mx-3"
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                >
-                    <Instagram/>
-                </motion.a>
-
+                
                 <motion.a href="https://web.facebook.com/?_rdc=1&_rdr" target={"_blank"}
                 className="w-8 mx-3"
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
-                    <Whatsltest/>
+                    <WhatsAppIcon/>
                 </motion.a>
 
                 
