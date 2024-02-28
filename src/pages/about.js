@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/shashank-verma.jpg";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -72,6 +73,8 @@ const about = () => {
               </p>
             </div>
           </div>
+
+          <Skills/>
         </Layout>
       </main>
     </>
