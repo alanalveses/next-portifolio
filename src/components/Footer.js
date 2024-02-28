@@ -18,7 +18,7 @@ function Footer() {
     "
     >
       <Layout className="py-8 flex items-center justify-between">
-        <div className="flex items-center justify-center flex-col mt-11">
+        <div className="flex items-center justify-center flex-col">
           <h2 className="text-base">Mais Redes Sociais</h2>
           <div className="flex items-center mt-3">
             <motion.a
@@ -51,28 +51,6 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center">
-          Feito com <span className="text-primary text-2xl px-1">&#9825;</span>
-          Por&nbsp;
-          <Link
-            href="/"
-            className="underline underline-offset-2"
-            target="_blank"
-          >
-            Alan
-          </Link>
-        </div>
-
-        <Link href="/" className="underline underline-offset-2" target="_blank">
-          Oizinho
-        </Link>
-      </Layout>
-
-      <Layout className="py-8 flex items-center justify-between">
-        <span>
-          {new Date().getFullYear()} &copy; Todos os Direitos Resevados.
-        </span>
-
         <div className="flex flex-col">
           <a href="mailto:alan.alveses@gmail.com">
             <div className="flex items-center mt-2">
@@ -98,6 +76,28 @@ function Footer() {
               <div className="text-base">11 96217-8615</div>
             </div>
           </a>
+        </div>
+
+        <Link href="/" className="underline underline-offset-2 mr-16" target="_blank">
+          Oizinho
+        </Link>
+      </Layout>
+
+      <Layout className="py-8 flex items-center justify-between">
+        <span>
+          {new Date().getFullYear()} &copy; Todos os Direitos Resevados.
+        </span>
+
+        <div className="flex items-center">
+          Feito com <span className="text-primary text-2xl px-1">&#9825;</span>
+          Por&nbsp;
+          <Link
+            href="/"
+            className="underline underline-offset-2"
+            target="_blank"
+          >
+            Alan
+          </Link>
         </div>
 
         <Link
