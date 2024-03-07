@@ -21,7 +21,7 @@ const Skill = ({name, x, y}) => {
 const Skills = () => {
   return (
     <>
-        <h2 className='font-bold text-8xl mt-64 w-full text-center'>Skills</h2>
+        <h2 className='font-bold text-8xl mt-64 w-full text-center'>Hard Skills</h2>
         <div className='w-full h-screen relative flex items-center justify-center 
         rounded-full bg-circularLight'>
 
@@ -29,6 +29,8 @@ const Skills = () => {
              bg-dark text-light p-8 shadow-dark cursor-pointer
             '
             whileHover={{scale:1.05}}
+            transition={{duration: 1.5}}
+            viewport={{once:true}}
             >Web
             </motion.div>
 
@@ -41,7 +43,7 @@ const Skills = () => {
             <Skill name="SASS" x="32vw" y="-5vw" />
             <Skill name="Tailwind CSS" x="-28vw" y="-2vw" />
             <Skill name="Figma" x="0vw" y="-20vw" />
-            <Skill name="Firebase" x="-20vw" y="18vw" />
+            <Skill name="UI/UX" x="-20vw" y="18vw" />
             <Skill name="Agile Methodology " x="18vw" y="18vw" />
         </div>
     </>

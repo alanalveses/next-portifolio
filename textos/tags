@@ -1,0 +1,48 @@
+  -------------------------------
+  <p className="font-medium">
+                Olá, sou Alan Alves, desenvolvedor web apaixonado por criar
+                designs bonitos, funcionais e experiências digitais centradas no
+                usuário. Com 1 anos de experiência na área. Estou sempre
+                procurando maneiras novas e inovadoras de dar vida às visões dos
+                meus clientes.
+              </p>
+              <p className="my-4 font-medium">
+                Acredito que design é mais do que apenas fazer as coisas
+                parecerem bonitas; é resolver problemas e criando experiências
+                intuitivas e agradáveis para os usuários.
+              </p>
+              <p className=" mb-4 font-medium">
+                Esteja eu trabalhando em um site, aplicativo móvel ou outro
+                produto digital, trago meu compromisso com a excelência em
+                design e o pensamento centrado no usuário para cada projeto em
+                que trabalho.
+              </p>
+              <p className="font-medium">
+                  Além de meu compromisso com o design centrado no usuário,
+                  possuo uma habilidade natural em trabalhar em equipe. Valorizo
+                  a colaboração e reconheço a importância de contribuir de forma
+                  positiva para alcançar os melhores resultados. Estou ansioso
+                  para colaborar com você em seu próximo projeto e trazer minhas
+                  habilidades e paixão para a equipe.
+              </p>
+
+
+
+
+              -------------------------------------------
+            <p className="font-medium">
+                Além da tecnologia, tenho uma paixão genuína por música, jogos e
+                animes. Uma das minhas grandes inspirações foi o desenho
+                &quot;Cyberchase&quot; que ainda considero extremamente
+                inspirador o contato das crianças com a tecnologia.
+              </p>
+              <p className="my-4 font-medium">
+                Desde pequeno, sempre apreciei desafios, e é por isso que sempre
+                gostei de jogos. Sempre os achei fascinantes, especialmente os
+                jogos digitais, que desempenharam um papel crucial em expandir
+                meus horizontes para este majestoso campo da programação.
+              </p>
+              <p className="font-medium">
+                Adoro música, especialmente músicas instrumentais, que são as
+                minhas preferidas.
+              </p>

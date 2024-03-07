@@ -72,8 +72,9 @@ const NavBar = () => {
             </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
+        <p>Alan Alves</p>
       </div>
+      
     </header>
   );
 };

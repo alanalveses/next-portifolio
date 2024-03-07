@@ -6,6 +6,7 @@ import Link from "next/link";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import ContactShortcut from "@/components/ContactShortcut";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
                 className="!text-6xl text-left"
               />
               <p className="my-4 text-base font-medium">
-                Como desenvolvedor front-end qualificado, empenho-me em
+                Como desenvolvedor web qualificado, empenho-me em
                 transformar ideias e aspirações em aplicações web inovadoras e
                 simplificadas. Possuo um conjunto de ferramentas diversificado,
                 com ênfase em React.js, centrado principalmente no
@@ -42,12 +43,12 @@ export default function Home() {
                   href="/dummy.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-5
-                rounded-lg text-base font-semibold hover:bg-light hover:text-dark
+                rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 "
                   download={true}
                 >
-                  Baixar CV <LinkArrow className={"w-3.5 ml-1"} />
+                  Baixar CV <LinkArrow className={"w-4 ml-1"} />
                 </Link>
                 <Link
                   href="mailto:alan.blmv@gmail.com"
@@ -64,6 +65,7 @@ export default function Home() {
         </Layout>
 
         <ContactShortcut />
+        <Logo />
       </main>
     </>
   );
