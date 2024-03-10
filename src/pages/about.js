@@ -6,6 +6,7 @@ import profilePic from "../../public/images/profile/shashank-verma.jpg";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import SoftSkills from "@/components/SoftSkills";
+import Services from "@/components/Services";
 
 const about = () => {
   return (
@@ -53,11 +54,14 @@ const about = () => {
                 Personalizando
               </h2>
               <p className="font-medium">
-              Gosto de construir produtos dinâmicos e criativos do início ao fim. Focado no desenvolvimento de experiências intuitivas que crescem e melhoram constantemente com base nas métricas do usuário.
+                Gosto de construir produtos dinâmicos e criativos do início ao
+                fim. Focado no desenvolvimento de experiências intuitivas que
+                crescem e melhoram constantemente com base nas métricas do
+                usuário.
               </p>
             </div>
           </div>
-
+          <Services/>
           <SoftSkills />
           <Skills />
           <Education />

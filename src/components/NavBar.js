@@ -30,8 +30,10 @@ const NavBar = () => {
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="Sobre" className="mx-4" />
         <CustomLink href="/projects" title="Projetos" className="mx-4" />
+        <CustomLink href="/about" title="Sobre" className="mx-4" />
+        <CustomLink href="/articles" title="Artigos" className="mx-4" />
+        <CustomLink href="/contact" title="Contato" className="mx-4" />
         <CustomLink href="/more" title="Mais" className="ml-4" />
       </nav>
 
