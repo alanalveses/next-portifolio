@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import project1 from "../../public/images/projects/gallery-35.jpg";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -13,8 +12,15 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       className="w-full flex items-center justify-between rounded-3xl relative rounded-br-2xl
     border border-solid border-dark bg-light shadow-2xl p-12"
     >
-    
-    <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark 
+      rounded-br-3xl" />
+      <div className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
+      rounded-br-3xl" />
+      <div className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
+      rounded-br-3xl" />
+      <div className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
+      rounded-br-3xl" />
+
       <Link
         href={link}
         target="_blank"
@@ -54,7 +60,15 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
+      rounded-br-3xl" />
+      <div className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
+      rounded-br-3xl" />
+      <div className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
+      rounded-br-3xl" />
+      <div className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
+      rounded-br-3xl" />
+
       <Link
         href={link}
         target="_blank"
@@ -102,7 +116,7 @@ const projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="A imaginação é o início de um sonho!"
-            className="mb-16 "
+            className="mb-16"
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32">

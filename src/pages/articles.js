@@ -37,7 +37,7 @@ const MovingImg = ({ title, img, link }) => {
     onMouseLeave={headleMouseLeave}
 
     >
-      <h2 className="capitalize text-xl font-semibold hover:underline">
+      <h2 className="text-xl font-semibold hover:underline">
         {title}
       </h2>
       <FramerImage 
@@ -67,7 +67,14 @@ const Project = ({ img, title, date, link }) => {
 const FeaturedProjects = ({ img, title, time, summary, link }) => {
   return (
     <li className="relative col-span-1 w-full p-4 bg-light border border-dark rounded-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
+      rounded-br-3xl" />
+      <div className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
+      rounded-br-3xl"/>
+      <div className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600
+      rounded-br-3xl"/>
+      <div className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300
+      rounded-br-3xl"/>
 
       <Link
         href={link}
@@ -84,7 +91,7 @@ const FeaturedProjects = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
+        <h2 className="text-2xl font-bold my-2 mt-4 hover:underline">
           {title}
         </h2>
       </Link>

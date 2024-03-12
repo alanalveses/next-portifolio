@@ -90,7 +90,7 @@ function FooterProjects() {
 
       <Layout className="py-8 flex items-center justify-between">
         <span>
-          {new Date().getFullYear()} &copy; Todos os Direitos Resevados.
+          2023/{new Date().getFullYear()} &copy; Todos os Direitos Resevados.
         </span>
 
         <div className="flex items-center">
