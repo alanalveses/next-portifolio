@@ -15,7 +15,7 @@ const about = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className="pt-20">
           <AnimatedText
             text="A paixão alimenta o propósito!"
             className="mb-16"

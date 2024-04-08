@@ -10,6 +10,7 @@ import {
   EasterEggIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
+import SideBarOld from "./SideBar";
 
 function FooterProjects() {
   return (
@@ -110,7 +111,7 @@ function FooterProjects() {
           className="underline underline-offset-2 max-w-10 mr-16"
           target="_blank"
         >
-          <EasterEggIcon/>
+          
         </Link>
       </Layout>
     </footer>

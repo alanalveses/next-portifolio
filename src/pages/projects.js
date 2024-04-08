@@ -4,7 +4,9 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import project1 from "../../public/images/projects/gallery-35.jpg";
+import project1 from "../../public/images/projects/lud-legends.png";
+import project2 from "../../public/images/projects/confeitaria-leide.png";
+import SideBar from "@/components/SideBar";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -113,7 +115,7 @@ const projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className="pt-24">
           <AnimatedText
             text="A imaginação é o início de um sonho!"
             className="mb-16"
@@ -122,22 +124,26 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeaturedProject
-                title="Titlo do Projeto"
-                summary="Descricao previa do projeto."
-                link="/"
+                title="Lud Legends"
+                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
+                
+                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
+                link="https://lud-legends.vercel.app/"
+                target="_blank"
                 type="Projeto em Destaque"
-                github="/"
+                github="https://github.com/alanalveses/lud-legends"
                 img={project1}
               />
             </div>
             <div className="col-span-6">
               <Project
-                title="Titlo do Projeto"
-                summary="Descricao previa do projeto."
-                link="/"
+                title="Confeitaria da Leide"
+                summary=""
+                link="https://confeitaria-da-leide-i6m4jn65i-alan-alves-projects.vercel.app/"
+                target="_blank"
                 type="Projeto em Destaque"
-                github="/"
-                img={project1}
+                github="https://github.com/alanalveses/Confeitaria-da-Leide"
+                img={project2}
               />
             </div>
             <div className="col-span-6">
@@ -153,19 +159,20 @@ const projects = () => {
 
             <div className="col-span-12">
               <FeaturedProject
-                title="Titlo do Projeto"
+                title="Confeitaria da Leide"
                 summary="Descricao previa do projeto."
-                link="/"
+                link="https://confeitaria-da-leide-i6m4jn65i-alan-alves-projects.vercel.app/"
                 type="Projeto em Destaque"
-                github="/"
-                img={project1}
+                github="https://github.com/alanalveses/Confeitaria-da-Leide"
+                target="_blank"
+                img={project2}
               />
             </div>
             <div className="col-span-6">
               <Project
                 title="Titlo do Projeto"
                 summary="Descricao previa do projeto."
-                link="/"
+                link=""
                 type="Projeto em Destaque"
                 github="/"
                 img={project1}
@@ -182,6 +189,7 @@ const projects = () => {
               />
             </div>
           </div>
+        <SideBar />
         </Layout>
       </main>
     </>

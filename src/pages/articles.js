@@ -109,7 +109,7 @@ const projects = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
-        <Layout className="pt-16">
+        <Layout className="pt-20">
           <AnimatedText
             text="Palavras mudam o mundo!"
             className="mb-16"

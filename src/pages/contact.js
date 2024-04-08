@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import {
-  EmailIcon,
+  EmailIconContact,
   PhoneCallingIcon,
-  TelephoneIcon,
-  WhatsAppIcon,
+  TelephoneIconContact,
+  WhatsAppIconContact,
 } from "@/components/Icons";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -90,22 +90,19 @@ export default function Contact() {
               <div className="flex flex-col gap-8 mt-2">
                 <motion.div className="item" variants={variants}>
                   <h2>
-                    {" "}
-                    <EmailIcon className="w-3.5 inline-block" /> E-mail
+                    <EmailIconContact className="w-20 h-20" /> E-mail
                   </h2>
                   <span className="font-light">alan.alveses@gmail.com</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                   <h2>
-                    {" "}
-                    <TelephoneIcon className="w-3.5 inline-block" /> Telefone
+                    <TelephoneIconContact className="w-20 h-20" /> Telefone
                   </h2>
                   <span className="font-light">11 99266-8420</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                   <h2>
-                    {" "}
-                    <WhatsAppIcon className="w-3.5 inline-block" /> WhatsApp
+                    <WhatsAppIconContact className="w-20 h-20" /> WhatsApp
                   </h2>
                   <span className="font-light">11 96217-8615</span>
                 </motion.div>

@@ -1,14 +1,14 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { DocumentIcon } from "./Icons";
+import { ArrowIcon, DocumentIcon } from "./Icons";
 
 const MotionLink = motion(Link);
 
 function Logo() {
   return (
     <div
-      className="fixed left-4 bottom-4  flex items-center justify-center overflow-hidden
+      className="fixed right-4 bottom-4  flex items-center justify-center overflow-hidden
     "
     >
     <div className="flex items-center justify-center mt-2">
@@ -27,7 +27,7 @@ function Logo() {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        <DocumentIcon />
+        <ArrowIcon />
       </MotionLink>
     </div>
     </div>

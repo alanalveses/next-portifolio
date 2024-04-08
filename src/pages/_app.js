@@ -1,3 +1,4 @@
+import Cursor from "@/components/Cursor";
 import FooterProjects from "@/components/FooterProjects";
 import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
         className={`${montserrat.variable} font-sans bg-light w-full min-h-screen`}
       >
         <NavBar/>
+        
         <Component {...pageProps} />
         <FooterProjects />
       </main>
