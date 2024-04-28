@@ -6,6 +6,7 @@ import profilePic from "../../public/images/profile/shashank-verma.jpg";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import SoftSkills from "@/components/SoftSkills";
+import Soft from "@/components/Soft";
 
 const about = () => {
   return (
@@ -60,7 +61,7 @@ const about = () => {
               </p>
             </div>
           </div>
-          <SoftSkills />
+          <Soft />
           <Skills />
           <Education />
         </Layout>

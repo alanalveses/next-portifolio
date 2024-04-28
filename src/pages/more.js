@@ -1,6 +1,5 @@
 import {
   AdaptationIcon,
-  AnalyticalThinking,
   AnalyticalThinkingIcon,
   BrainIcon,
   CollaborationIcon,
@@ -9,11 +8,11 @@ import {
   DoubleChatIcon,
   EmotionalIntelligenceIcon,
   EmpathyIcon,
-  Flexibility,
+  FlexibilityIcon,
   GroupIcon,
   LightBulbIcon,
-  LogicalThinking,
-  MTime,
+  LogicalThinkingIcon,
+  MTimeIcon,
   NegotiationIcon,
   ProactiveIcon,
   ResilienceIcon,
@@ -107,7 +106,7 @@ const More = () => {
               secondColor={"shadow-lime-200"}
             />
             <Differeciales
-              icon={<Flexibility />}
+              icon={<FlexibilityIcon />}
               title={"flexibilidade"}
               summary={"Esse é o resumo do texto"}
               color={"bg-teal-500"}
@@ -171,14 +170,14 @@ const More = () => {
               secondColor={"bg-teal-500"}
             />
             <Differeciales
-              icon={<LogicalThinking />}
+              icon={<LogicalThinkingIcon />}
               title={"Pensamento lógico"}
               summary={"Esse é o resumo do texto"}
               color={"bg-indigo-500"}
               secondColor={"shadow-indigo-200"}
             />
             <Differeciales
-              icon={<MTime />}
+              icon={<MTimeIcon />}
               title={"Gestao de tempo"}
               summary={"Esse é o resumo do texto"}
               color={"bg-indigo-500"}

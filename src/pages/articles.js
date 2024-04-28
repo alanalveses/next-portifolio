@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
-import project1 from "../../public/images/projects/gallery-23.jpg";
+import article1 from "../../public/images/articles/article-graduacao.jpg";
 import project2 from "../../public/images/projects/gallery-24.jpg";
 import project3 from "../../public/images/projects/gallery-25.jpg";
 import project4 from "../../public/images/projects/gallery-34.jpg";
@@ -78,7 +78,7 @@ const FeaturedProjects = ({ img, title, time, summary, link }) => {
 
       <Link
         href={link}
-        target="_blank"
+        target="_self"
         className="w-full inline-block cursor-pointer overflow-hidden rounded-lg
       "
       >
@@ -90,7 +90,7 @@ const FeaturedProjects = ({ img, title, time, summary, link }) => {
           transition={{ duration: 0.5 }}
         />
       </Link>
-      <Link href={link} target="_blank">
+      <Link href={link} target="_self">
         <h2 className="text-2xl font-bold my-2 mt-4 hover:underline">
           {title}
         </h2>
@@ -116,11 +116,12 @@ const projects = () => {
           />
           <ul className="grid grid-cols-2 gap-16">
             <FeaturedProjects
-              title="Últimos artigos criados por mim."
-              summary="Descrição prévia do artigo a ser lido."
-              time="9 minutos de leitura"
-              link="/"
-              img={project1}
+              title="Sonho da Graduação."
+              summary="Artigo de autoria própria que conta um pouco sobre minha trajetória acadêmica."
+              time="7 minutos de leitura"
+              link="/article"
+              target="_self"
+              img={article1}
             />
             <FeaturedProjects
               title="Últimos artigos criados por mim."
@@ -137,10 +138,11 @@ const projects = () => {
 
           <ul>
             <Project
-              title="Outros artigos, aqui o componente é mais sucinto, a descrição do artigo, com características diversas mantendo uma uniformidade e consistência."
-              date="10 de Março, 2024"
-              link=""
-              img={project5}
+              title="A decisão de ingressar em uma área deve ser impulsionada por sua
+              curiosidade natural e um fascínio, algo que te faz querer mais."
+              date="20 de Janeiro, 2024"
+              link="/article"
+              img={article1}
             />
             <Project
               title="Outros artigos, aqui o componente é mais sucinto, a descrição do artigo, com características diversas mantendo uma uniformidade e consistência."

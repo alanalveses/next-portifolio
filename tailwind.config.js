@@ -24,6 +24,7 @@ module.exports = {
         'spin-slow': 'spin 8s linear infinite'
       },
       backgroundImage:{
+        brainBackground: "url('/images/cerebro-humano.png')", //url('/images/svgs/BrainIcon.svg')",
         circularLight: ' repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px);'
       },
     },

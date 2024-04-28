@@ -77,7 +77,7 @@ export const LightBulbIcon = ({ className, ...rest }) => (
   </svg>
 );
 
-export const Flexibility = ({ className, ...rest }) => (
+export const FlexibilityIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -258,7 +258,7 @@ export const DoubleChatIcon = ({ className, ...rest }) => (
   </svg>
 );
 
-export const LogicalThinking = ({ className, ...rest }) => (
+export const LogicalThinkingIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -272,7 +272,7 @@ export const LogicalThinking = ({ className, ...rest }) => (
   </svg>
 );
 
-export const MTime = ({ className, ...rest }) => (
+export const MTimeIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
