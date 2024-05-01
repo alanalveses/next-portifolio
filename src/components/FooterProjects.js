@@ -17,6 +17,7 @@ function FooterProjects() {
     <footer
       className="w-full border-t-2 border-solid border-dark
     font-medium text-lg
+    dark:text-light dark:border-light
     "
     >
       <Layout className="py-8 flex items-center justify-between">
@@ -95,7 +96,7 @@ function FooterProjects() {
         </span>
 
         <div className="flex items-center">
-          Feito com <span className="text-primary text-2xl px-1">&#9825;</span>
+          Feito com <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>
           Por&nbsp;
           <Link
             href="/"

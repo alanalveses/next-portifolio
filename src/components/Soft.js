@@ -35,11 +35,11 @@ const SoftSkill = ({ x, y, icon, color, secondColor, text }) => {
       viewport={{ once: true }}
     >
       <span
-        className={` flex flex-col justify-center items-center p-4 rounded-full ${color} text-white text-xs shadow-xl ${secondColor}`}
+        className={` flex flex-col justify-center items-center p-4 rounded-full ${color} text-white text-xs shadow-xl ${`shadow-${secondColor}`}`}
       >
         {icon}
       </span>
-      <span >
+      <span className="pr-1">
       {text}
 
       </span>
@@ -89,8 +89,8 @@ const Soft = () => {
       />
       <SoftSkill
         icon={<CollaborationIcon />}
-        color={"bg-teal-500"}
-        secondColor={"bg-teal-500"}
+        color={"bg-indigo-500"}
+        secondColor={"bg-indigo-500"}
         x="-25vw"
         y="20vw"
         text="Colaboração"
@@ -98,8 +98,8 @@ const Soft = () => {
 
       <SoftSkill
         icon={<ContinuousLearningIcon />}
-        color={"bg-orange-500"}
-        secondColor={"shadow-orange-200"}
+        color={"bg-red-500"}
+        secondColor={"shadow-red-200"}
         x="-19vw"
         y="12vw"
         text="Aprendizado Contínuo"
@@ -155,8 +155,8 @@ const Soft = () => {
       />
       <SoftSkill
         icon={<LogicalThinkingIcon />}
-        color={"bg-indigo-500"}
-        secondColor={"shadow-indigo-200"}
+        color={"bg-orange-500"}
+        secondColor={"shadow-orange-200"}
         x="0vw"
         y="-22vw"
         text="Pensamento Lógico"
