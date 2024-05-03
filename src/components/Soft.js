@@ -52,7 +52,7 @@ const Soft = () => {
     <>
     <h2 className='font-bold text-8xl mt-36 w-full text-center'>Soft Skills</h2>
     <div className="w-full h-[150vh] relative flex items-center justify-center 
-     bg-brainBackground dark bg-no-repeat bg-contain ml-36 mt-24">
+     bg-brainBackground dark bg-no-repeat bg-contain ml-44 mt-24">
       <motion.div 
         className="flex items-center justify-center rounded-full font-semibold
         bg-dark text-light shadow-dark cursor-pointer absolute
@@ -197,8 +197,8 @@ const Soft = () => {
         icon={<SetaIcon />}
         color={"bg-lime-500"}
         secondColor={"shadow-lime-200"}
-        x="9vw"
-        y="14vw"
+        x="5vw"
+        y="15vw"
         text="Visão Estratégica"
       />
       <SoftSkill
