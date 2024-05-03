@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import SoftSkills from "@/components/SoftSkills";
 import Soft from "@/components/Soft";
+import ColorsCircle from "@/components/ColorsCircle";
 
 const about = () => {
   return (
@@ -65,6 +66,7 @@ const about = () => {
           <Skills />
           <Education />
         </Layout>
+        <ColorsCircle />
       </main>
     </>
   );

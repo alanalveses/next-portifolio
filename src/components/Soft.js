@@ -52,7 +52,7 @@ const Soft = () => {
     <>
     <h2 className='font-bold text-8xl mt-36 w-full text-center'>Soft Skills</h2>
     <div className="w-full h-[150vh] relative flex items-center justify-center 
-     bg-brainBackground dark bg-no-repeat bg-contain ml-44 mt-24">
+     bg-brainBackground dark:bg-brainBackgroundLight bg-no-repeat bg-contain ml-44 mt-24">
       <motion.div 
         className="flex items-center justify-center rounded-full font-semibold
         bg-dark text-light shadow-dark cursor-pointer absolute
