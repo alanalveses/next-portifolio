@@ -84,6 +84,10 @@ export default function Home() {
                 src={profilePic}
                 alt="Alan Alves"
                 className="w-full h-auto"
+                priority
+                sizes="
+                (max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 50vw"
               />
             </div>
           </div>
@@ -127,7 +131,7 @@ export default function Home() {
             </div>
 
             <div className="w-2/3 mr-2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 dark:bg-dark bg-white shadow-xl shadow-neutral-100 dark:shadow-neutral-950 border p-5">
+              <div className="grid grid-cols-1 2xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 dark:bg-dark bg-white shadow-xl shadow-neutral-100 dark:shadow-neutral-950 border p-5">
                 <Differeciales
                   icon={<RocketIcon />}
                   title={"Desenvolvimento ágil"}

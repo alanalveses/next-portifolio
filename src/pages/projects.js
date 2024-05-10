@@ -8,6 +8,9 @@ import project1 from "../../public/images/projects/lud-legends.png";
 import project2 from "../../public/images/projects/confeitaria-leide.png";
 import SideBar from "@/components/SideBar";
 import ColorsCircle from "@/components/ColorsCircle";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -31,7 +34,17 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg
       "
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+          priority
+          sizes="
+          (max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw, 50vw" 
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">

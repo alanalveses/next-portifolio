@@ -17,14 +17,14 @@ const about = () => {
         <meta name="description" content="any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-20">
+        <Layout className="pt-16">
           <AnimatedText
             text="A paixão alimenta o propósito!"
-            className="mb-16"
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
                 Desenvolvedor de Sistemas & Solusionador de Problemas
               </h2>
               <p className="font-medium">
@@ -48,13 +48,17 @@ const about = () => {
                 src={profilePic}
                 alt="Alan Alves"
                 className="w-full h-auto rounded-2xl"
+                priority
+                sizes="
+                (max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-start justify-between">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+            <div className="col-span-2 flex flex-col items-start justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Personalizando
               </h2>
-              <p className="font-medium">
+              <p className="font-medium ml-4">
                 Gosto de construir produtos dinâmicos e criativos do início ao
                 fim. Focado no desenvolvimento de experiências intuitivas que
                 crescem e melhoram constantemente com base nas métricas do

@@ -1,16 +1,22 @@
 import ToggleButton from "./ToggleButton";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const LinksSideBar = () => {
   return (
-    <div className="absolute bottom-1  flex flex-row items-center gap-5 text-light bg-dark">
-      LinksSideBar
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
+  <>
+    <div className="absolute bottom-1 flex flex-col gap-6 items-center pl-24 pr-24 pt-12 pb-12 text-light bg-dark">
+
+  <h3>LinksSideBar</h3>
+    <div className="flex flex-row items-center gap-5">
+      <li className="list-none p-2 bg-light text-dark text-center border border-transparent hover:border-light hover:bg-dark hover:text-light"><Link href="" target="_blank" className="w-10">Projeto 1</Link></li>
+      <li className="list-none p-2 bg-light text-dark text-center border border-transparent hover:border-light hover:bg-dark hover:text-light"><Link href="" target="_blank" className="w-10">Projeto 2</Link></li>
+      <li className="list-none p-2 bg-light text-dark text-center border border-transparent hover:border-light hover:bg-dark hover:text-light"><Link href="" target="_blank" className="w-10">Projeto 3</Link></li>
+      <li className="list-none p-2 bg-light text-dark text-center border border-transparent hover:border-light hover:bg-dark hover:text-light"><Link href="" target="_blank" className="w-10">Projeto 4</Link></li>
     </div>
+    </div>
+  </>
   );
 };
 
@@ -19,7 +25,7 @@ const SideBar = () => {
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "circle(1200px at 150px 150px)",
       transition: {
         type: "spring",
         stiffness: 20,
@@ -42,7 +48,7 @@ const SideBar = () => {
         animate={open ? "open" : "closed"}
       >
         <motion.div
-          className="bg w-96 bg-dark relative -bottom-80 right-10 "
+          className="bg w-96 bg-dark relative -bottom-96 right-10 "
           variants={variants}
         >
           <LinksSideBar />

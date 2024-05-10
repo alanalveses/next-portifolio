@@ -83,7 +83,7 @@ const Soft = () => {
         icon={<AnalyticalThinkingIcon />}
         color={"bg-yellow-500"}
         secondColor={"shadow-yellow-200"}
-        x="-17vw"
+        x="-19vw"
         y="-25vw"
         text="Pensamento Analitico"
       />
