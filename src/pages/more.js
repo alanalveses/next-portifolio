@@ -23,6 +23,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { PhoneCallingIconLight } from "@/components/Icons";
 
 const variants = {
   initial: {
@@ -69,7 +70,7 @@ const More = () => {
 
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-white shadow-xl shadow-neutral-100 border p-5 mt-32">
+          <div className="grid grid-cols-1 2xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-white shadow-xl shadow-neutral-100 border p-5 mt-32">
             <Differeciales
               icon={<EmotionalIntelligenceIcon />}
               title={"Inteligencia emocional"}
@@ -198,6 +199,20 @@ const More = () => {
               secondColor={"shadow-indigo-200"}
             />
           </div>
+
+          <motion.div className="w-5/6 h-5/6 flex justify-center items-center mt-6" variants={variants}>
+            <motion.div
+              className="flex justify-center items-center -z-10"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 3 }}
+            >
+              <PhoneCallingIconLight
+                className="w-full h-full text-center"
+                animate={isInView && { pathLength: 1 }}
+              />
+            </motion.div>
+          </motion.div>
 
           <motion.div className="w-5/6 h-5/6 flex justify-center items-center mt-6" variants={variants}>
             <motion.div

@@ -7,6 +7,7 @@ import { motion, useInView } from "framer-motion";
 import {
   EmailIconContact,
   PhoneCallingIcon,
+  PhoneCallingIconLight,
   TelephoneIconContact,
   WhatsAppIconContact,
 } from "@/components/Icons";
@@ -69,7 +70,7 @@ export default function Contact() {
           />
           <AnimatedText
             text="Vamos construí-lo juntos!"
-            className="text-center !text-7xl mb-10"
+            className="text-center !text-7xl mb-44"
           />
 
           <motion.div
@@ -120,7 +121,8 @@ export default function Contact() {
                 whileInView={{ opacity: 0 }}
                 transition={{ delay: 3, duration: 1 }}
               >
-                <PhoneCallingIcon animate={isInView && { pathLength: 1 }} />
+                <PhoneCallingIcon className="dark:hidden z-50" animate={isInView && { pathLength: 1 }} />
+                <PhoneCallingIconLight className="" animate={isInView && { pathLength: 1 }} />
               </motion.div>
 
               <motion.form

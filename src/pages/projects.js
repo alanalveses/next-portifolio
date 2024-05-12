@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import project1 from "../../public/images/projects/lud-legends.png";
 import project2 from "../../public/images/projects/confeitaria-leide.png";
+import project3 from "../../public/images/projects/anime-lud.png";
 import SideBar from "@/components/SideBar";
 import ColorsCircle from "@/components/ColorsCircle";
 import { motion } from "framer-motion";
@@ -44,7 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           sizes="
           (max-width: 768px) 100vw,
           (max-width: 1200px) 50vw, 50vw" 
-        />
+          />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -165,12 +166,12 @@ const projects = () => {
             </div>
             <div className="col-span-6">
               <Project
-                title="Titlo do Projeto"
+                title="Anime Lud"
                 summary="Descricao previa do projeto."
-                link="/"
+                link="https://animelud.vercel.app/"
                 type="Projeto em Destaque"
-                github="/"
-                img={project1}
+                github="https://github.com/alanalveses/anime-lud"
+                img={project3}
               />
             </div>
 

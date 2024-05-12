@@ -2,12 +2,13 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/shashank-verma.jpg";
-import Skills from "@/components/Skills";
+import profilePic from "../../public/images/profile/violino-isolado.png";
 import Education from "@/components/Education";
 import SoftSkills from "@/components/SoftSkills";
-import Soft from "@/components/Soft";
 import ColorsCircle from "@/components/ColorsCircle";
+import Certificates from "@/components/Certificates";
+import HardSkills from "@/components/HardSkills";
+
 
 const about = () => {
   return (
@@ -22,7 +23,7 @@ const about = () => {
             text="A paixão alimenta o propósito!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 mb-72">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
                 Desenvolvedor de Sistemas & Solusionador de Problemas
@@ -54,11 +55,11 @@ const about = () => {
                 (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-start justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+            <div className="col-span-2 flex flex-col items-start justify-between mt-28 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Personalizando
               </h2>
-              <p className="font-medium ml-4">
+              <p className="font-medium">
                 Gosto de construir produtos dinâmicos e criativos do início ao
                 fim. Focado no desenvolvimento de experiências intuitivas que
                 crescem e melhoram constantemente com base nas métricas do
@@ -66,9 +67,10 @@ const about = () => {
               </p>
             </div>
           </div>
-          <Soft />
-          <Skills />
+          <SoftSkills />
+          <HardSkills />
           <Education />
+          <Certificates />
         </Layout>
         <ColorsCircle />
       </main>
