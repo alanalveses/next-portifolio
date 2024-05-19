@@ -1,14 +1,13 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/violino-isolado.png";
-import Education from "@/components/Education";
-import SoftSkills from "@/components/SoftSkills";
-import ColorsCircle from "@/components/ColorsCircle";
-import Certificates from "@/components/Certificates";
-import HardSkills from "@/components/HardSkills";
-
+import Education from "@/components/About/Education";
+import SoftSkills from "@/components/About/SoftSkills";
+import ColorsCircle from "@/components/Global/ColorsCircle";
+import Certificates from "@/components/About/Certificates";
+import HardSkills from "@/components/About/HardSkills";
 
 const about = () => {
   return (

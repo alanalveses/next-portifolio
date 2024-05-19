@@ -1,14 +1,14 @@
-import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import { GithubIcon } from "@/components/Global/Icons";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import project1 from "../../public/images/projects/lud-legends.png";
 import project2 from "../../public/images/projects/confeitaria-leide.png";
 import project3 from "../../public/images/projects/anime-lud.png";
-import SideBar from "@/components/SideBar";
-import ColorsCircle from "@/components/ColorsCircle";
+import SideBar from "@/components/Footer/SideBar";
+import ColorsCircle from "@/components/Global/ColorsCircle";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -20,14 +20,22 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     border border-solid shadow-2xl p-12 border-dark bg-light
     dark:bg-dark dark:border-light"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark 
-      rounded-br-3xl" />
-      <div className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
-      rounded-br-3xl" />
-      <div className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
-      rounded-br-3xl" />
-      <div className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
-      rounded-br-3xl" />
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
+      rounded-br-3xl"
+      />
 
       <Link
         href={link}
@@ -44,18 +52,22 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           priority
           sizes="
           (max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw, 50vw" 
-          />
+          (max-width: 1200px) 50vw, 50vw"
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+            {title}
+          </h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center ">
@@ -78,16 +90,26 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid p-6 relative border-dark bg-light 
-    dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-      rounded-br-3xl" />
-      <div className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
-      rounded-br-3xl" />
-      <div className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
-      rounded-br-3xl" />
-      <div className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
-      rounded-br-3xl" />
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid p-6 relative border-dark bg-light 
+    dark:bg-dark dark:border-light"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-4 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
+      rounded-br-3xl"
+      />
+      <div
+        className="absolute top-6 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
+      rounded-br-3xl"
+      />
 
       <Link
         href={link}
@@ -99,7 +121,9 @@ const Project = ({ title, type, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -207,7 +231,7 @@ const projects = () => {
               />
             </div>
           </div>
-        <SideBar />
+          <SideBar />
         </Layout>
         <ColorsCircle />
       </main>

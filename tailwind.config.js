@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
+      fontSize:{
+        textCursor: " 0.5rem",
+      },
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",
@@ -20,6 +23,7 @@ module.exports = {
         primaryDark: "#58E6D9",
         secondary: "#E4080A",
         secondaryDark: "#960608",
+        spiritedAwayColor:"#00ADFE",
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite'
@@ -50,7 +54,7 @@ module.exports = {
       xs: { max: "479px" },
       // => @media (max-width: 479px) { ... }
 
-      xxs: { max: "310px" },
+      xxs: { max: "370px" },
       // => @media (max-width: 310px) { ... }
 
     },

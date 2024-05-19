@@ -1,5 +1,5 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
@@ -74,11 +74,7 @@ const GraduationArticle = () => {
                 className="w-6/12 h-auto"
               />
 
-              <Image
-                src={article2}
-                alt="Games"
-                className="w-6/12 h-auto"
-              />
+              <Image src={article2} alt="Games" className="w-6/12 h-auto" />
             </div>
 
             <h2 className="mb-6 mt-10 text-4xl font-bold">Início do Sonho</h2>
@@ -117,9 +113,10 @@ const GraduationArticle = () => {
                 Uma conquista marcante foi o desenvolvimento de um projeto de
                 software mobile com características semelhantes às de uma rede
                 social. O design do aplicativo foi criado no Figma e documentado
-                com base nos princípios de engenharia de software. O software foi 
-                desenvolvido nas matérias de &#34;Desenvolvimento Apps Móveis&#34; e sua 
-                documentação na &#34;Engenharia de Software&#34;.
+                com base nos princípios de engenharia de software. O software
+                foi desenvolvido nas matérias de &#34;Desenvolvimento Apps
+                Móveis&#34; e sua documentação na &#34;Engenharia de
+                Software&#34;.
               </p>
               <Image src={article4} alt="Fogos" className="w-7/12 h-auto" />
             </div>
@@ -161,7 +158,9 @@ const GraduationArticle = () => {
               colaboração, gestão do tempo e capacidade de superar obstáculos.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Considerações Finais</h2>
+            <h2 className="mb-6 mt-10 text-4xl font-bold">
+              Considerações Finais
+            </h2>
             <p className="">
               Minha jornada acadêmica foi mais do que apenas adquirir
               conhecimentos técnicos; foi um processo de autodescoberta,

@@ -1,5 +1,5 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
@@ -16,10 +16,7 @@ const DisplayArticle = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-24">
-          <AnimatedText
-            text="O que é display no CSS?"
-            className=" !text-5xl"
-          />
+          <AnimatedText text="O que é display no CSS?" className=" !text-5xl" />
           <div className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify">
             <p className="text-right">Autor: Alan Alves</p>
             <p className="mb-12 text-right">Data: 02 de Novembro de 2023</p>
@@ -86,23 +83,23 @@ const DisplayArticle = () => {
 
             <h2 className="mb-6 mt-10 text-4xl font-bold">Display Flex</h2>
             <p className="">
-            O Flexbox é um modelo de layout moderno que oferece grande
-                flexibilidade para organizar elementos em uma linha ou coluna.
-                Com o Flexbox, é possível alinhar, justificar e distribuir
-                elementos de maneiras mais sofisticadas. Ele é ideal para criar
-                layouts responsivos que se adaptam a diferentes tamanhos de
-                tela. O inline-flex se comporta como inline-block, mas com as
-                funcionalidades do Flexbox.
+              O Flexbox é um modelo de layout moderno que oferece grande
+              flexibilidade para organizar elementos em uma linha ou coluna. Com
+              o Flexbox, é possível alinhar, justificar e distribuir elementos
+              de maneiras mais sofisticadas. Ele é ideal para criar layouts
+              responsivos que se adaptam a diferentes tamanhos de tela. O
+              inline-flex se comporta como inline-block, mas com as
+              funcionalidades do Flexbox.
             </p>
 
             <h2 className="mb-6 mt-10 text-4xl font-bold">Display Grid</h2>
             <div className="flex mx-auto mb-6 mt-6">
-              <p className="mr-10">O Grid CSS é outro modelo moderno que permite criar layouts
-              bidimensionais usando linhas e colunas. É perfeito para projetos
-              complexos onde a estrutura precisa ser mais rigorosa, como
-              dashboards ou galerias de imagens. O inline-grid é semelhante ao
-              inline-flex, mas com a flexibilidade do Grid.
-                
+              <p className="mr-10">
+                O Grid CSS é outro modelo moderno que permite criar layouts
+                bidimensionais usando linhas e colunas. É perfeito para projetos
+                complexos onde a estrutura precisa ser mais rigorosa, como
+                dashboards ou galerias de imagens. O inline-grid é semelhante ao
+                inline-flex, mas com a flexibilidade do Grid.
               </p>
               <Image src={article2} alt="Fogos" className="w-7/12 h-auto" />
             </div>

@@ -1,19 +1,23 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import {
+  EmailIcon,
   EmailIconContact,
+  EmailIconLight,
   PhoneCallingIcon,
   PhoneCallingIconLight,
+  TelephoneIcon,
   TelephoneIconContact,
+  TelephoneIconLight,
   WhatsAppIconContact,
-} from "@/components/Icons";
+} from "@/components/Global/Icons";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ColorsCircle from "@/components/ColorsCircle";
+import ColorsCircle from "@/components/Global/ColorsCircle";
 
 const variants = {
   initial: {
@@ -75,36 +79,41 @@ export default function Contact() {
 
           <motion.div
             ref={ref}
-            className="h-full flex items-center"
+            className="h-full flex xs:flex-col items-center"
             variants={variants}
             initial="initial"
             whileInView="animate"
           >
             <motion.div
-              className="flex-1 flex flex-col gap-4 leading-11"
+              className="flex-1 flex flex-col gap-4 leading-11 xs:mb-24 xs:items-center xs:text-center"
               variants={variants}
             >
               <motion.div variants={variants}>
-                <motion.h2 className="text-8xl text-start font-semibold">
+                <motion.h2 className="text-8xl text-start font-semibold lg:text-6xl sm:text-4xl xs:text-6xl xs:text-center">
                   Vamos conversar!
                 </motion.h2>
               </motion.div>
-              <div className="flex flex-col gap-8 mt-2">
-                <motion.div className="item" variants={variants}>
-                  <h2>
-                    <EmailIconContact className="w-20 h-20 dark:bg-light rounded-full" /> E-mail
+              <div className="flex flex-col gap-8 mt-2 ">
+                <motion.div className="item " variants={variants}>
+                  <h2 className="xs:flex xs:items-center">
+                    <EmailIcon className="!w-10 flex dark:hidden xs:ml-12 xs:mr-4 xs:mb-2" />
+                    <EmailIconLight className="!w-10 hidden dark:flex xs:ml-12 xs:mr-4 xs:mb-2" />
+                    E-mail
                   </h2>
                   <span className="font-light">alan.alveses@gmail.com</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                  <h2>
-                    <TelephoneIconContact className="w-20 h-20 dark:bg-light  rounded-full dark:p-0.5" /> Telefone
+                  <h2 className="xs:flex xs:items-center">
+                    <TelephoneIcon className="!w-10 flex dark:hidden xs:ml-12 xs:mr-4 xs:mb-2" />
+                    <TelephoneIconLight className="!w-10 hidden dark:flex xs:ml-12 xs:mr-4 xs:mb-2" />
+                    Telefone
                   </h2>
                   <span className="font-light">11 99266-8420</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                  <h2>
-                    <WhatsAppIconContact className="w-20 h-20" /> WhatsApp
+                  <h2 className="xs:flex xs:items-center">
+                    <WhatsAppIconContact className="w-20 h-20 xs:ml-10 xs:mr-4 xs:mb-2" />{" "}
+                    WhatsApp
                   </h2>
                   <span className="font-light">11 96217-8615</span>
                 </motion.div>
@@ -121,8 +130,14 @@ export default function Contact() {
                 whileInView={{ opacity: 0 }}
                 transition={{ delay: 3, duration: 1 }}
               >
-                <PhoneCallingIcon className="dark:hidden z-50" animate={isInView && { pathLength: 1 }} />
-                <PhoneCallingIconLight className="" animate={isInView && { pathLength: 1 }} />
+                <PhoneCallingIcon
+                  className="dark:hidden "
+                  animate={isInView && { pathLength: 1 }}
+                />
+                <PhoneCallingIconLight
+                  className=" hidden dark:flex"
+                  animate={isInView && { pathLength: 1 }}
+                />
               </motion.div>
 
               <motion.form

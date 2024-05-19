@@ -18,12 +18,12 @@ import {
   ResilienceIcon,
   SetaIcon,
   TeamWorkIcon,
-} from "@/components/InonsSkills";
-import Layout from "@/components/Layout";
+} from "@/components/Global/InonsSkills";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { PhoneCallingIconLight } from "@/components/Icons";
+import { GearIcon, PhoneCallingIconLight } from "@/components/Global/Icons";
 
 const variants = {
   initial: {
@@ -200,21 +200,14 @@ const More = () => {
             />
           </div>
 
-          <motion.div className="w-5/6 h-5/6 flex justify-center items-center mt-6" variants={variants}>
-            <motion.div
-              className="flex justify-center items-center -z-10"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 3 }}
-            >
-              <PhoneCallingIconLight
-                className="w-full h-full text-center"
-                animate={isInView && { pathLength: 1 }}
-              />
-            </motion.div>
-          </motion.div>
+          <div>
+            <GearIcon />
+          </div>
 
-          <motion.div className="w-5/6 h-5/6 flex justify-center items-center mt-6" variants={variants}>
+          <motion.div
+            className="w-5/6 h-5/6 flex justify-center items-center mt-6"
+            variants={variants}
+          >
             <motion.div
               className="flex justify-center items-center -z-10"
               initial={{ opacity: 0 }}

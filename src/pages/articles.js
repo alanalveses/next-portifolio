@@ -1,5 +1,5 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/components/Global/AnimatedText";
+import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +7,10 @@ import Link from "next/link";
 import article1 from "../../public/images/articles/article-graduacao.jpg";
 import article2 from "../../public/images/articles/display.jpg";
 import { motion } from "framer-motion";
-import ColorsCircle from "@/components/ColorsCircle";
-import ArticlesList from "../components/ArticlesList";
+import ColorsCircle from "@/components/Global/ColorsCircle";
+import ArticlesList from "../components/Articles/ArticlesList";
 
 const FramerImage = motion(Image);
-
 
 const FeaturedArticles = ({ img, title, time, summary, link }) => {
   return (
@@ -65,7 +64,6 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
 };
 
 const articles = () => {
-
   return (
     <>
       <Head>
@@ -95,8 +93,6 @@ const articles = () => {
           </ul>
 
           <ArticlesList />
-
-          
         </Layout>
         <ColorsCircle />
       </main>
