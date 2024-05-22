@@ -21,9 +21,9 @@ function FooterProjects() {
     dark:text-light dark:border-light
     "
     >
-      <Layout className="py-8 flex items-center justify-between">
-        <div className="flex items-center justify-center flex-col ml-20">
-          <h2 className="text-base">Mais Redes Sociais</h2>
+      <Layout className="py-8 flex items-center justify-between sm:flex-col">
+        <div className="flex items-center justify-center flex-col pl-20 sm:pl-0 sm:pb-6">
+          <h2 className="text-base sm:text-lg">Mais Redes Sociais</h2>
           <div className="flex items-center mt-3">
             <motion.a
               href="https://www.instagram.com/alanalveses/"
@@ -55,7 +55,7 @@ function FooterProjects() {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:justify-center sm:items-center sm:pb-6">
           <a href="mailto:alan.alveses@gmail.com">
             <div className="flex items-center mt-2">
               <div className="w-8 mr-2">
@@ -94,12 +94,12 @@ function FooterProjects() {
         </Link>
       </Layout>
 
-      <Layout className="py-8 flex items-center justify-between ml-20">
-        <span>
+      <Layout className="py-8 flex items-center justify-between pl-48 sm:pl-0 sm:py-0 sm:flex-col-reverse sm:pb-10">
+        <span className="text-center xs:text-wrap">
           2023/{new Date().getFullYear()} &copy; Todos os Direitos Resevados.
         </span>
 
-        <div className="flex items-center">
+        <div className="flex items-center sm:pb-6">
           Feito com{" "}
           <span className="text-primary dark:text-primaryDark text-2xl px-1">
             &#9825;

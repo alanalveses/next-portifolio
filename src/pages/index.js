@@ -5,14 +5,7 @@ import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
 import AnimatedText from "@/components/Global/AnimatedText";
 import {
-  BankNotesIcon,
-  Flexibility,
   LinkArrow,
-  PersonalizedService,
-  RocketIcon,
-  SupportIcon,
-  UserPersonFocus,
-  WhatsAppIconContact,
 } from "@/components/Global/Icons";
 
 import ContactShortcut from "@/components/Home/ContactShortcut";
@@ -28,11 +21,11 @@ export default function Home() {
       </Head>
       <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
         <Layout className="pt-24">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2 flex flex-col items-center self-center">
+          <div className="flex items-center justify-between w-full lg:flex-col">
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Olá, me chamo Alan Alves, sou desenvolvedor web, com ênfase na experiência do usuário."
-                className="!text-5xl text-left"
+                className="!text-5xl text-left lg:!text-center md:!text-4xl sm:!text-3xl xs:!text-2xl"
               />
               <p className="my-4 text-base font-medium">
                 Como desenvolvedor web qualificado, estou comprometido em
@@ -67,11 +60,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-1/2 mr-2">
+            <div className="w-1/2 mr-2 md:w-full md:mt-24 md:mr-0">
               <Image
                 src={profilePic}
                 alt="Alan Alves"
-                className="w-full h-auto"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="
                 (max-width: 768px) 100vw,
@@ -83,13 +76,13 @@ export default function Home() {
           <div className="flex items-center justify-between w-full mt-24">
             <AnimatedText
               text="Transformando sonhos em realidade com código, design e amor."
-              className="!text-5xl text-pretty"
+              className="!text-5xl text-pretty xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-4xl sm:!text-3xl xs:text-2xl"
             />
           </div>
 
           <Differeciales />
 
-          <div className="w-full relative py-10 px-20 mt-24 flex items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light ">
+          <div className="w-full relative py-10 px-20 mt-24 mb-20 flex items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light lg:px-10 sm:-ml-4">
             <div
               className="absolute top-1 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
                 rounded-br-3xl"
@@ -107,11 +100,11 @@ export default function Home() {
                 rounded-br-3xl"
             />
 
-            <div className="px-20">
-              <h3 className="text-dark dark:text-light text-4xl font-medium">
+            <div className="px-20 lg:px-14 md:px-0">
+              <h3 className="text-dark dark:text-light text-4xl font-medium md:text-2xl xs:text-xl">
                 Você se Interessou?
               </h3>
-              <p className=" text-dark dark:text-light text-lg">
+              <p className=" text-dark dark:text-light text-lg md:text-sm xs:text-xs">
                 Tem algum pojeto a ser construido?
               </p>
             </div>
@@ -120,7 +113,8 @@ export default function Home() {
               className="flex items-center bg-dark text-light p-2.5 px-5
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
-                dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
+                dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                md:ml-4 sm:text-xs xs:text-wrap xs:text-center"
             >
               Vamos Trabalhar Juntos!
             </Link>

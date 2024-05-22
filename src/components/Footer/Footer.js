@@ -14,10 +14,10 @@ function Footer() {
   return (
     <footer
       className="w-full border-t-2 border-solid border-dark
-    font-medium text-lg
+    font-medium text-lg sm:text-base
     "
     >
-      <Layout className="py-8 flex items-center justify-between">
+      <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
         <div className="flex items-center justify-center flex-col">
           <h2 className="text-base">Mais Redes Sociais</h2>
           <div className="flex items-center mt-3">
@@ -92,7 +92,7 @@ function Footer() {
           {new Date().getFullYear()} &copy; Todos os Direitos Resevados.
         </span>
 
-        <div className="flex items-center">
+        <div className="flex items-center lg:py-2">
           Feito com <span className="text-primary text-2xl px-1">&#9825;</span>
           Por&nbsp;
           <Link

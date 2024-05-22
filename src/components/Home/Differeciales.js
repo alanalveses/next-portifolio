@@ -23,12 +23,12 @@ const Differeciale = ({ icon, title, summary, color, secondColor }) => {
         </span>
         <p
           className="text-xl font-medium text-slate-700 mt-3 
-          group-hover:dark:text-dark dark:text-light transition-colors duration-1000
+          group-hover:dark:text-dark dark:text-light transition-colors duration-1000 lg:text-base xs:text-sm xxs:text-xs
           "
         >
           {title}
         </p>
-        <p className="mt-2 text-sm text-slate-500 ">{summary}</p>
+        <p className="mt-2 text-sm text-slate-500 lg:text-xs">{summary}</p>
       </div>
     </>
   );
@@ -37,13 +37,13 @@ const Differeciale = ({ icon, title, summary, color, secondColor }) => {
 const Differeciales = () => {
   return (
     <>
-      <div className="flex items-center justify-between w-full mt-24">
-        <div className="w-1/3 flex flex-col items-center self-center mr-2">
+      <div className="flex items-center justify-between w-full mt-24 md:flex-col">
+        <div className="w-1/3 flex flex-col items-center self-center mr-2 md:w-full">
           <AnimatedText
             text="Excelência Personalizada: Destaque-se com Serviços de Qualidade Superior."
-            className="!text-4xl text-pretty"
+            className="!text-4xl text-pretty lg:!text-center lg:!text-3xl md:!text-2xl sm:!text-xl xs:text-lg"
           />
-          <p className="my-4 text-base font-medium">
+          <p className="my-4 text-base font-medium lg:text-sm">
             Destaque-se com meus serviços personalizados e de qualidade
             excepcional! Como freelancer, ofereço uma abordagem única para
             atender às suas necessidades individuais. Com minhas habilidades
@@ -61,20 +61,22 @@ const Differeciales = () => {
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                lg:text-sm
                 "
             >
               Mensagem <WhatsAppIconContact className={"w-4 ml-1"} />
             </Link>
             <Link
               href="/contact"
-              className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline"
+              className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline
+              lg:text-sm"
             >
               Contatos
             </Link>
           </div>
         </div>
 
-        <div className="w-2/3 mr-2">
+        <div className="w-2/3 mr-2 md:w-full md:mt-24">
           <div className="grid grid-cols-1 2xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 dark:bg-dark bg-white shadow-xl shadow-neutral-100 dark:shadow-neutral-950 border p-5">
             <Differeciale
               icon={<RocketIcon />}
