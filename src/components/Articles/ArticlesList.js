@@ -39,7 +39,7 @@ const MovingImg = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
         priority
         sizes="
           (max-width: 768px) 100vw,
@@ -56,10 +56,11 @@ const Article = ({ img, title, date, link }) => {
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
-        dark:border-light dark:bg-dark dark:text-light"
+        dark:border-light dark:bg-dark dark:text-light sm:flex-col"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark text-right">
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark text-right
+      sm:self-start sm:pl-0 xs:text-sm">
         {date}
       </span>
     </motion.li>
@@ -146,17 +147,19 @@ const ArticlesList = () => {
 
   return (
     <>
-      <h2 className="font-bold text-8xl mt-36 mb-24 w-full text-center">
+      <h2 className="font-bold text-8xl mt-36 mb-24 w-full text-center lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl">
         Lista de Artigos
       </h2>
 
-      <div className="flex justify-evenly items-center mx-24">
+      <div className="flex justify-evenly items-center mx-24 lg:mx-14 md:mx-10 sm:mx-0
+      xs:flex-wrap ">
         <button
           onClick={() => setSelectedCategory("pessoal")}
           className="flex items-center bg-dark text-light p-2.5 px-5
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                sm:text-xs xs:mb-4
                 "
         >
           Pessoais
@@ -167,6 +170,7 @@ const ArticlesList = () => {
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                sm:text-xs xs:mb-4
                 "
         >
           Programação
@@ -177,6 +181,7 @@ const ArticlesList = () => {
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                sm:text-xs xs:mb-4
                 "
         >
           Outros
@@ -187,6 +192,7 @@ const ArticlesList = () => {
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                sm:text-xs xs:mb-4
                 "
         >
           Todos
@@ -194,7 +200,7 @@ const ArticlesList = () => {
       </div>
 
       <ul>
-        <h3 className="font-bold text-4xl w-full text-center my-16 mt-32">
+        <h3 className="font-bold text-4xl w-full text-center my-16 mt-12">
           {getTitle()}
         </h3>
         {filteredArticles.map((article, index) => (
