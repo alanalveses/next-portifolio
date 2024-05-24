@@ -1,0 +1,143 @@
+[33mcommit 8aaf6e43bbe7a5a1e18a0926408c475f1f2500ba[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Wed May 22 23:00:19 2024 -0300
+
+    add responsive design for “articles”, “projects” and “about” pages
+
+[33mcommit 39bba8d1211424342044ca550a6d0ac6b5744e22[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Tue May 21 22:46:23 2024 -0300
+
+    add responsive design for "navbar", "footer" and "index page"
+
+[33mcommit e81ead6d449b49518f367239659fa55e6590fbd2[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sun May 19 00:40:17 2024 -0300
+
+    add "custom cursor" and directory correction
+
+[33mcommit 76f38047fd39249854776db2669e67b75ad40511[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sat May 11 22:21:08 2024 -0300
+
+    add filter on "articles" page
+
+[33mcommit 178637d15092b261f3c9ecbdaf301fa6a5c10afd[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu May 9 21:38:32 2024 -0300
+
+    add responsiveness to the "menu" and add a new "menu for mobile"
+
+[33mcommit 31c3d2d7983a6d74a26461c3e7b86825ff24223f[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu May 2 23:16:19 2024 -0300
+
+    add dark mode on "about", "projects", "articles" and "contact" pages
+
+[33mcommit 24adca7b96a2cb5b6d16b4abc87e7ebf1f1c46c0[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu May 2 21:51:48 2024 -0300
+
+    add correction to flash of unstyled content "dark mode"
+
+[33mcommit c2a0b61952ddf1313e475b8963c996d5ab9b20f0[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Wed May 1 18:18:23 2024 -0300
+
+    add dark mode on "index" page
+
+[33mcommit e4022024e2295471b1b64a34a096a912061a2209[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sun Apr 28 15:58:57 2024 -0300
+
+    add updates to the "about" page and modifying the "soft skills"
+
+[33mcommit ff74fff2b95c91fedc0da7349f856e251041d08a[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Mon Apr 8 15:45:10 2024 -0300
+
+    add updates to the "index" page and bug fixes
+
+[33mcommit fccd3858dc0868bfdb3429bbca9697d9ff037fa6[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Tue Mar 12 00:25:02 2024 -0300
+
+    add "contat" page
+
+[33mcommit b6465a318694b6e6debf3a8a545e0cce303d075a[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sun Mar 10 11:25:45 2024 -0300
+
+    add "articles" page
+
+[33mcommit c057abe78b938c99ffe0206fe1b053c68d2e2272[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sat Mar 9 00:11:01 2024 -0300
+
+    add projects page
+
+[33mcommit f0ab64c2b285e47222c31b0c0d2efaff6b36eaf5[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Sat Mar 9 00:07:55 2024 -0300
+
+    add projects page
+
+[33mcommit ee09689dec163294fc48ad1532f03ca37b8e6a6e[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu Mar 7 00:37:23 2024 -0300
+
+    add components "Education" and "Softskills
+
+[33mcommit caee8252396663ae31cdb7c349870d1054edf95f[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Tue Feb 27 22:39:28 2024 -0300
+
+    add component "Skills"
+
+[33mcommit db29844f53dff225366c3835c2da57ad4ea7eba6[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Tue Feb 27 22:29:04 2024 -0300
+
+    add page "about"
+
+[33mcommit 1435f5bd7e4fed2f50b86c9be20c4a673986b4fb[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Fri Feb 23 22:14:27 2024 -0300
+
+    add components "ContactShortcut",  and "Footer"
+
+[33mcommit b2afc0320a1093723b84fd70e10e7f4a1aef6593[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu Feb 22 23:23:48 2024 -0300
+
+    add correction to the "AnimetedText" component
+
+[33mcommit d83d84852b8274b210e7b22f64230b8e8f153371[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu Feb 22 23:20:40 2024 -0300
+
+    add correction to the "Icons" and "AnimetedText" components
+
+[33mcommit b36281f960be974b7fb3193b5c1b19a35816f8c6[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Thu Feb 22 23:04:30 2024 -0300
+
+    add components "Icons", "Layout" and "AnimetedText"
+
+[33mcommit af95d84e2d1b1fc3d8ec3ac53d32c60c89e4aeb4[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Wed Feb 21 23:17:19 2024 -0300
+
+    add components "NavBar" and "Logo"
+
+[33mcommit 9df421854c652a59d2be6173198cd3c0a192267d[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Wed Feb 21 21:50:43 2024 -0300
+
+    add tailwind css settings
+
+[33mcommit c5f53277211ea89eb5f068670ac739687cb60370[m
+Author: Alan Alves <alan.alveses@gmail.com>
+Date:   Tue Feb 20 21:14:34 2024 -0300
+
+    initial commit

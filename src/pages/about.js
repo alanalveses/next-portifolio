@@ -22,9 +22,10 @@ const about = () => {
             text="A paixão alimenta o propósito!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 mb-72">
-            <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+            <div className="col-span-3 flex flex-col items-start justify-start
+            xl:col-span-4 md:order-2 md:col-span-8">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light md:mt-10">
                 Desenvolvedor de Sistemas & Solusionador de Problemas
               </h2>
               <p className="font-medium">
@@ -37,7 +38,8 @@ const about = () => {
 
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid 
-            border-dark bg-light p-8
+            border-dark bg-light p-8 
+            xl:col-span-4 md:order-1 md:col-span-8
             "
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
@@ -54,7 +56,7 @@ const about = () => {
                 (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-start justify-between mt-28 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+            <div className="col-span-2 flex flex-col items-start justify-between mt-28 xl:col-span-8 xl:flex-col xl:items-center xl:gap-10 md:order-3">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
                 Personalizando
               </h2>

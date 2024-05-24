@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import  { motion } from "framer-motion";
 import certificate1 from "../../../public/images/certificates/CURSO SUPERIOR ADS.jpg";
 import certificate2 from "../../../public/images/certificates/LAUREA ACADEMICA.jpg";
 import certificate3 from "../../../public/images/certificates/CURSO REACT.jpg";
@@ -8,15 +8,17 @@ import certificate4 from "../../../public/images/certificates/CURSO UX DESIGN.jp
 import Link from "next/link";
 import { LinkArrow } from "../Global/Icons";
 
+const FramerImage = motion(Image);
+
 const Certificate = ({ title, type, img, link, github, date }) => {
   return (
     <article
-      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid p-6 relative border-dark bg-light 
-      dark:bg-dark dark:border-light"
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid p-6 relative border-dark bg-light dark:bg-dark dark:border-light
+      lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-        rounded-br-3xl"
+        rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
       />
       <div
         className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
@@ -34,14 +36,24 @@ const Certificate = ({ title, type, img, link, github, date }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg
+        className="w-full cursor-pointer overflow-hidden rounded-lg lg:w-full
         "
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.5 }}
+          priority
+          sizes="
+          (max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw, 50vw"
+        />
       </Link>
 
-      <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+      <div className="w-full flex flex-col items-start justify-between mt-4 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
           {type}
         </span>
         <Link
@@ -49,7 +61,7 @@ const Certificate = ({ title, type, img, link, github, date }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold sm:text-sm">{title}</h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between">
@@ -68,10 +80,10 @@ const Certificate = ({ title, type, img, link, github, date }) => {
 const Certificates = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-64 mb-24 w-full text-center">
+      <h2 className="font-bold text-8xl mt-64 mb-24 w-full text-center lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl">
         Certificados
       </h2>
-      <div className="grid grid-cols-12 gap-24 gap-y-32">
+      <div className="grid grid-cols-12 gap-20 mb-24 gap-y-32 lg:gap-8 md:grid-cols-1 md:gap-y-16 md:mr-4">
         <div className="col-span-6">
           <Certificate
             title="Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas"
@@ -104,7 +116,7 @@ const Certificates = () => {
           />
         </div>
 
-        <div className="col-span-6">
+        <div className="col-span-6 ">
           <Certificate
             title="Curso UX Design: Entenda a Área da User Experience"
             link="https://github.com/alanalveses/Certificados/blob/main/Curso%20UX%20Design_%20entenda%20a%20%C3%A1rea%20da%20User%20Experience%20-%20Alura.pdf"
