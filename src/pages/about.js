@@ -2,7 +2,7 @@ import AnimatedText from "@/components/Global/AnimatedText";
 import Layout from "@/components/Global/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/violino-isolado.png";
+import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Education from "@/components/About/Education";
 import SoftSkills from "@/components/About/SoftSkills";
 import ColorsCircle from "@/components/Global/ColorsCircle";
@@ -16,7 +16,7 @@ const about = () => {
         <title>Alan Alves | Sobre</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light sm:p-1">
         <Layout className="pt-16">
           <AnimatedText
             text="A paixão alimenta o propósito!"
@@ -26,7 +26,7 @@ const about = () => {
             <div className="col-span-3 flex flex-col items-start justify-start
             xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light md:mt-10">
-                Desenvolvedor de Sistemas & Solusionador de Problemas
+                Desenvolvedor de Sistemas
               </h2>
               <p className="font-medium">
                 Sou Alan Alves, desenvolvedor web com ênfase em React.js, amante
@@ -39,7 +39,7 @@ const about = () => {
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid 
             border-dark bg-light p-8 
-            xl:col-span-4 md:order-1 md:col-span-8
+            xl:col-span-4 md:order-1 md:col-span-8 sm:mr-4
             "
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
@@ -57,8 +57,8 @@ const about = () => {
               />
             </div>
             <div className="col-span-2 flex flex-col items-start justify-between mt-28 xl:col-span-8 xl:flex-col xl:items-center xl:gap-10 md:order-3">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">
-                Personalizando
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light xl:text-center">
+              Solusionador de Problemas
               </h2>
               <p className="font-medium">
                 Gosto de construir produtos dinâmicos e criativos do início ao

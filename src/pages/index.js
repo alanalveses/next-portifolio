@@ -11,6 +11,7 @@ import {
 import ContactShortcut from "@/components/Home/ContactShortcut";
 import ColorsCircle from "@/components/Global/ColorsCircle";
 import Differeciales from "@/components/Home/Differeciales";
+import Quote from "@/components/Home/Quote";
 
 export default function Home() {
   return (
@@ -61,7 +62,8 @@ export default function Home() {
             </div>
 
             <div className="w-1/2 mr-2 md:w-full md:mt-24 md:mr-0">
-              <Image
+              <Quote/>
+              {/* <Image
                 src={profilePic}
                 alt="Alan Alves"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
@@ -69,7 +71,7 @@ export default function Home() {
                 sizes="
                 (max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
-              />
+              /> */}
             </div>
           </div>
 

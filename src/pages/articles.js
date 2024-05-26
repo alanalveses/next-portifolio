@@ -14,10 +14,10 @@ const FramerImage = motion(Image);
 
 const FeaturedArticles = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-dark rounded-2xl dark:bg-dark dark:border-light ">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-      rounded-br-3xl"
+      rounded-br-3xl "
       />
       <div
         className="absolute top-2 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
@@ -70,7 +70,7 @@ const articles = () => {
         <title>Alan Alves | Artigos</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light sm:p-1">
         <Layout className="pt-20">
           <AnimatedText
             text="Palavras mudam o mundo!"
@@ -78,7 +78,7 @@ const articles = () => {
           />
           <ul
             className="grid grid-cols-2 gap-16
-          lg:gap-8 md:grid-cols-1 md:gap-y-16"
+          lg:gap-8 md:grid-cols-1 md:gap-y-16 sm:mr-4"
           >
             <FeaturedArticles
               title="Sonho da Graduação."

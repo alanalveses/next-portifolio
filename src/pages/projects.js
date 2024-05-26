@@ -163,7 +163,7 @@ const projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2">
             <div className="col-span-12">
               <FeaturedProject
                 title="Lud Legends"
@@ -208,26 +208,6 @@ const projects = () => {
                 github="https://github.com/alanalveses/Confeitaria-da-Leide"
                 target="_blank"
                 img={project2}
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Titlo do Projeto"
-                summary="Descricao previa do projeto."
-                link=""
-                type="Projeto em Destaque"
-                github="/"
-                img={project1}
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Titlo do Projeto"
-                summary="Descricao previa do projeto."
-                link="/"
-                type="Projeto em Destaque"
-                github="/"
-                img={project1}
               />
             </div>
           </div>

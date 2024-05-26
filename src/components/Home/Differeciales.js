@@ -28,7 +28,7 @@ const Differeciale = ({ icon, title, summary, color, secondColor }) => {
         >
           {title}
         </p>
-        <p className="mt-2 text-sm text-slate-500 lg:text-xs">{summary}</p>
+        <p className="mt-2 text-sm text-slate-500 lg:text-xs xs:text-textXxs leading-3">{summary}</p>
       </div>
     </>
   );

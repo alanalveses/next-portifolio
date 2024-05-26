@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize:{
         textCursor: " 0.5rem",
+        textXxs: " 0.5rem",
       },
       colors: {
         dark: "#1b1b1b",

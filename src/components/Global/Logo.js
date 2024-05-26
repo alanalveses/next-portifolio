@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-
-import logo from "../../../public/images/logo.png";
 import logoRedu from "../../../public/images/logo-redu.png";
 import Image from "next/image";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
@@ -11,7 +9,7 @@ const MotionLink = motion(Link);
 
 const Logo = () => {
   return (
-    <div className="flex items-center justify-center mt-2">
+    <div className="flex items-center justify-center mt-2 xl:hidden lg:flex">
       <MotionLink
         href="/"
         className="w-16 h-16 text-light flex items-center justify-center rounded-full text-2x1 font-bold border border-solid border-transparent bg-dark dark:bg-light dark:border-light"

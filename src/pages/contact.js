@@ -1,17 +1,13 @@
 import AnimatedText from "@/components/Global/AnimatedText";
 import Layout from "@/components/Global/Layout";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import {
   EmailIcon,
-  EmailIconContact,
   EmailIconLight,
   PhoneCallingIcon,
   PhoneCallingIconLight,
   TelephoneIcon,
-  TelephoneIconContact,
   TelephoneIconLight,
   WhatsAppIconContact,
 } from "@/components/Global/Icons";
@@ -70,11 +66,11 @@ export default function Contact() {
         <Layout>
           <AnimatedText
             text="Quer compartilhar um sonho?"
-            className="text-center !text-7xl"
+            className="text-center !text-7xl md:text-6xl lg:!text-7xl sm:!text-6xl xs:!text-4xl "
           />
           <AnimatedText
             text="Vamos construí-lo juntos!"
-            className="text-center !text-7xl mb-44"
+            className="text-center !text-7xl  md:text-6xl lg:!text-7xl sm:!text-6xl xs:!text-4xl mb-24 "
           />
 
           <motion.div
@@ -89,7 +85,7 @@ export default function Contact() {
               variants={variants}
             >
               <motion.div variants={variants}>
-                <motion.h2 className="text-8xl text-start font-semibold lg:text-6xl sm:text-4xl xs:text-6xl xs:text-center">
+                <motion.h2 className="text-8xl text-start font-semibold lg:!text-6xl md:text-5xl sm:!text-4xl xs:!text-4xl xs:text-center">
                   Vamos conversar!
                 </motion.h2>
               </motion.div>
