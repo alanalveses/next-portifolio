@@ -1,14 +1,15 @@
-import AnimatedText from "@/components/Global/AnimatedText";
-import { GithubIcon } from "@/components/Global/Icons";
-import Layout from "@/components/Global/Layout";
+import AnimatedText from "@/components/global/AnimatedText";
+import { GithubIcon } from "@/components/global/Icons";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import project1 from "../../public/images/projects/lud-legends.png";
 import project2 from "../../public/images/projects/confeitaria-leide.png";
 import project3 from "../../public/images/projects/anime-lud.png";
-import SideBar from "@/components/Footer/SideBar";
-import ColorsCircle from "@/components/Global/ColorsCircle";
+import project4 from "../../public/images/projects/fokus.png";
+import SideBar from "@/components/footer/SideBar";
+import ColorsCircle from "@/components/global/ColorsCircle";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -69,7 +70,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -92,7 +95,7 @@ const Project = ({ title, type, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid p-6 relative border-dark bg-light dark:bg-dark dark:border-light
-      xs:p-4"
+      xs:p-4 "
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
@@ -129,7 +132,9 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between">
@@ -163,7 +168,7 @@ const projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2 xs:mr-2">
             <div className="col-span-12">
               <FeaturedProject
                 title="Lud Legends"
@@ -181,7 +186,7 @@ const projects = () => {
               <Project
                 title="Confeitaria da Leide"
                 summary=""
-                link="https://confeitaria-da-leide-i6m4jn65i-alan-alves-projects.vercel.app/"
+                link="https://confeitaria-da-leide.vercel.app/"
                 target="_blank"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/Confeitaria-da-Leide"
@@ -203,11 +208,22 @@ const projects = () => {
               <FeaturedProject
                 title="Confeitaria da Leide"
                 summary="Descricao previa do projeto."
-                link="https://confeitaria-da-leide-i6m4jn65i-alan-alves-projects.vercel.app/"
+                link="https://confeitaria-da-leide.vercel.app/"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/Confeitaria-da-Leide"
                 target="_blank"
                 img={project2}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Fokus"
+                summary="Projeto de pomodoro para estudos."
+                link="https://alanalveses.github.io/Fokus/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/Fokus-personalizado"
+                target="_blank"
+                img={project4}
               />
             </div>
           </div>

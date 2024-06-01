@@ -1,17 +1,15 @@
-import Layout from "@/components/Global/Layout";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
-import AnimatedText from "@/components/Global/AnimatedText";
-import {
-  LinkArrow,
-} from "@/components/Global/Icons";
+import AnimatedText from "@/components/global/AnimatedText";
+import { LinkArrow } from "@/components/global/Icons";
 
-import ContactShortcut from "@/components/Home/ContactShortcut";
-import ColorsCircle from "@/components/Global/ColorsCircle";
-import Differeciales from "@/components/Home/Differeciales";
-import Quote from "@/components/Home/Quote";
+import ContactShortcut from "@/components/home/ContactShortcut";
+import ColorsCircle from "@/components/global/ColorsCircle";
+import Differeciales from "@/components/home/Differeciales";
+import Quote from "@/components/home/Quote";
 
 export default function Home() {
   return (
@@ -53,7 +51,7 @@ export default function Home() {
                   href="mailto:alan.blmv@gmail.com"
                   target="_blank"
                   className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline"
-                  // border border-solid border-transparent analisando um método melhor neste hover
+                  // border border-solid border-transparent analisando um método melhor para o hover
                   // hover:border-dark hover:text-underline
                 >
                   Contato
@@ -62,7 +60,7 @@ export default function Home() {
             </div>
 
             <div className="w-1/2 mr-2 md:w-full md:mt-24 md:mr-0">
-              <Quote/>
+              <Quote />
               {/* <Image
                 src={profilePic}
                 alt="Alan Alves"

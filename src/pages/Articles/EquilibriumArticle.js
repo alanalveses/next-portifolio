@@ -1,13 +1,13 @@
-import AnimatedText from "@/components/Global/AnimatedText";
-import Layout from "@/components/Global/Layout";
+import AnimatedText from "@/components/global/AnimatedText";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 
-import article1 from "../../../public/images/article/mental.jpg";
-import article2 from "../../../public/images/article/doctor.jpg";
-import article3 from "../../../public/images/article/meditation.jpg";
-import article4 from "../../../public/images/article/smile.jpg";
+import article1 from "../../../public/images/articles/mental.jpg";
+import article2 from "../../../public/images/articles/doctor.jpg";
+import article3 from "../../../public/images/articles/meditation.jpg";
+import article4 from "../../../public/images/articles/smile.jpg";
 
 const EquilibriumArticle = () => {
   return (
@@ -20,11 +20,14 @@ const EquilibriumArticle = () => {
         <Layout className="pt-24">
           <AnimatedText
             text="Equilibrando Saúde, Trabalho e Vida: Uma Jornada Pessoal"
-            className=" !text-5xl"
+            className=" !text-6xl sm:!text-5xl xs:!text-4xl"
           />
-          <div className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify">
+          <div
+            className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify
+          lg:mr-32 lg:ml-32 md:mr-24 md:ml-24 sm:mr-20 sm:ml-20 xs:mr-10 xs:ml-10 xxs:mr-0 xxs:ml-0"
+          >
             <p className="text-right">Autor: Alan Alves</p>
-            <p className="mb-12 text-right">Data: 24 de Abril de 2023</p>
+            <p className="mb-12 text-right">Data: 14 de Abril de 2023</p>
 
             <p className="mb-12">
               Num mundo cada vez mais frenético e interconectado, onde o
@@ -37,11 +40,13 @@ const EquilibriumArticle = () => {
 
             <Image src={article1} alt="Code" className="mb-6 w-full h-1/2" />
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               A Importância da Saúde
             </h2>
 
-            <h3 className="mb-6 mt-10 text-4xl font-bold">Saúde Física</h3>
+            <h3 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Saúde Física
+            </h3>
 
             <p className="">
               Uma mente saudável habita em um corpo saudável. Manter a saúde
@@ -54,7 +59,9 @@ const EquilibriumArticle = () => {
               disposição.
             </p>
 
-            <h3 className="mb-6 mt-10 text-4xl font-bold">Saúde Mental</h3>
+            <h3 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Saúde Mental
+            </h3>
 
             <p className="mb-6">
               A saúde mental é igualmente crucial. O estresse, a ansiedade, a
@@ -85,7 +92,7 @@ const EquilibriumArticle = () => {
               <Image src={article2} alt="Games" className="w-6/12 h-auto" />
             </div>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Ambiente de Trabalho Saudável e Gerenciamento de Tempo
             </h2>
             <p className="">
@@ -105,7 +112,7 @@ const EquilibriumArticle = () => {
               são estratégias importantes.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Relações Interpessoais e Lazer
             </h2>
             <p className="">
@@ -119,7 +126,7 @@ const EquilibriumArticle = () => {
               uma necessidade para um bem-estar equilibrado.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Autocuidado e Definição de Limites
             </h2>
             <p className="">
@@ -133,7 +140,7 @@ const EquilibriumArticle = () => {
               relaxamento.
             </p>
 
-            <h2 className="mb-8 mt-10 text-4xl font-bold">
+            <h2 className="mb-8 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Considerações Finais
             </h2>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularText } from "../Global/Icons";
+import { CircularText } from "../global/Icons";
 import Link from "next/link";
 
 const ContactShortcut = () => {

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import  { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import certificate1 from "../../../public/images/certificates/CURSO SUPERIOR ADS.jpg";
 import certificate2 from "../../../public/images/certificates/LAUREA ACADEMICA.jpg";
 import certificate3 from "../../../public/images/certificates/CURSO REACT.jpg";
 import certificate4 from "../../../public/images/certificates/CURSO UX DESIGN.jpg";
 import Link from "next/link";
-import { LinkArrow } from "../Global/Icons";
+import { LinkArrow } from "../global/Icons";
 
 const FramerImage = motion(Image);
 
@@ -61,7 +61,9 @@ const Certificate = ({ title, type, img, link, github, date }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold sm:text-sm">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold sm:text-sm">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between">

@@ -14,9 +14,9 @@ import {
   SpiritedAway,
   SunIcon,
   WhatsAppIcon,
-} from "../Global/Icons";
+} from "../global/Icons";
 import { motion } from "framer-motion";
-import Logo from "../Global/Logo";
+import Logo from "../global/Logo";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 import Cursoratt from "./Cursor";
 

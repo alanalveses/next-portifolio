@@ -8,9 +8,9 @@ import {
   SupportIcon,
   UserPersonFocus,
   WhatsAppIconContact,
-} from "@/components/Global/Icons";
+} from "@/components/global/Icons";
 import Link from "next/link";
-import AnimatedText from "../Global/AnimatedText";
+import AnimatedText from "../global/AnimatedText";
 
 const Differeciale = ({ icon, title, summary, color, secondColor }) => {
   return (
@@ -28,7 +28,9 @@ const Differeciale = ({ icon, title, summary, color, secondColor }) => {
         >
           {title}
         </p>
-        <p className="mt-2 text-sm text-slate-500 lg:text-xs xs:text-textXxs leading-3">{summary}</p>
+        <p className="mt-2 text-sm text-slate-500 lg:text-xs xs:text-textXxs leading-3">
+          {summary}
+        </p>
       </div>
     </>
   );

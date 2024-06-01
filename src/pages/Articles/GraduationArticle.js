@@ -1,13 +1,13 @@
-import AnimatedText from "@/components/Global/AnimatedText";
-import Layout from "@/components/Global/Layout";
+import AnimatedText from "@/components/global/AnimatedText";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 
-import article1 from "../../../public/images/article/cyberchase.jpg";
-import article2 from "../../../public/images/article/game.jpg";
-import article3 from "../../../public/images/article/code.jpg";
-import article4 from "../../../public/images/article/fireworks.jpg";
+import article1 from "../../../public/images/articles/cyberchase.jpg";
+import article2 from "../../../public/images/articles/game.jpg";
+import article3 from "../../../public/images/articles/code.jpg";
+import article4 from "../../../public/images/articles/fireworks.jpg";
 
 const GraduationArticle = () => {
   return (
@@ -16,13 +16,16 @@ const GraduationArticle = () => {
         <title>Alan Alves | Artigo</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center  dark:text-light">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-24">
           <AnimatedText
             text="Começando uma Nova Jornada!"
-            className=" !text-5xl"
+            className="!text-6xl sm:!text-5xl xs:!text-4xl"
           />
-          <div className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify">
+          <div
+            className="mr-44 ml-44 mx-[3cm] my-[2cm] text-base leading-relaxed text-justify
+           lg:mr-32 lg:ml-32 md:mr-24 md:ml-24 sm:mr-20 sm:ml-20 xs:mr-10 xs:ml-10 xxs:mr-0 xxs:ml-0"
+          >
             <p className="text-right">Autor: Alan Alves</p>
             <p className="mb-12 text-right">Data: 20 de Janeiro de 2024</p>
 
@@ -38,7 +41,9 @@ const GraduationArticle = () => {
 
             <Image src={article3} alt="Code" className="mb-6 w-full h-1/2" />
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Mudanças Radicais</h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Mudanças Radicais
+            </h2>
             <p className="">
               Antes de iniciar minha jornada acadêmica, enfrentei desafios e
               obstáculos que precisei superar. Meu caminho foi repleto de altos
@@ -51,7 +56,9 @@ const GraduationArticle = () => {
               caminho seguir, pois tinha interesse em diversas áreas.{" "}
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Decidindo a Área </h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Decidindo a Área{" "}
+            </h2>
 
             <p className="mb-6">
               A tecnologia sempre exerceu um grande fascínio sobre mim. A ideia
@@ -77,7 +84,9 @@ const GraduationArticle = () => {
               <Image src={article2} alt="Games" className="w-6/12 h-auto" />
             </div>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Início do Sonho</h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Início do Sonho
+            </h2>
             <p className="">
               Ao entrar na faculdade, eu estava entusiasmado e ansioso para
               aprender tudo sobre programação e desenvolvimento de sistemas. Nas
@@ -89,7 +98,7 @@ const GraduationArticle = () => {
               melhor o tópico em questão.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Desafios Durante o Curso
             </h2>
             <p className="">
@@ -104,10 +113,10 @@ const GraduationArticle = () => {
               habilidades de gerenciamento do tempo e trabalho colaborativo.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Conquistas e Momentos Memoráveis
             </h2>
-            <div className="flex  mx-auto mb-6 mt-6">
+            <div className="flex mx-auto mb-6 mt-6 xl:flex-col xl:items-center xl:justify-center">
               <p className="mr-10">
                 Apesar dos desafios, também tive muitos momentos de celebração.
                 Uma conquista marcante foi o desenvolvimento de um projeto de
@@ -118,7 +127,11 @@ const GraduationArticle = () => {
                 Móveis&#34; e sua documentação na &#34;Engenharia de
                 Software&#34;.
               </p>
-              <Image src={article4} alt="Fogos" className="w-7/12 h-auto" />
+              <Image
+                src={article4}
+                alt="Fogos"
+                className="w-7/12 h-auto xl:mt-6 "
+              />
             </div>
             <p className="">
               Embora o projeto não tenha sido concluído devido ao curto prazo do
@@ -144,7 +157,7 @@ const GraduationArticle = () => {
               e colaboração.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Conclusão da Graduação
             </h2>
             <p className="">
@@ -158,7 +171,7 @@ const GraduationArticle = () => {
               colaboração, gestão do tempo e capacidade de superar obstáculos.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Considerações Finais
             </h2>
             <p className="">

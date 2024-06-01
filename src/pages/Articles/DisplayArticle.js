@@ -1,11 +1,11 @@
-import AnimatedText from "@/components/Global/AnimatedText";
-import Layout from "@/components/Global/Layout";
+import AnimatedText from "@/components/global/AnimatedText";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 
-import article1 from "../../../public/images/article/displays.jpg";
-import article2 from "../../../public/images/article/code.jpg";
+import article1 from "../../../public/images/articles/displays.jpg";
+import article2 from "../../../public/images/articles/code.jpg";
 
 const DisplayArticle = () => {
   return (
@@ -16,8 +16,14 @@ const DisplayArticle = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-24">
-          <AnimatedText text="O que é display no CSS?" className=" !text-5xl" />
-          <div className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify">
+          <AnimatedText
+            text="O que é display no CSS?"
+            className="!text-6xl sm:!text-5xl xs:!text-4xl"
+          />
+          <div
+            className="mr-44 ml-44 mx-[3cm] my-[2cm] font-times text-base leading-relaxed text-justify
+          lg:mr-32 lg:ml-32 md:mr-24 md:ml-24 sm:mr-20 sm:ml-20 xs:mr-10 xs:ml-10 xxs:mr-0 xxs:ml-0"
+          >
             <p className="text-right">Autor: Alan Alves</p>
             <p className="mb-12 text-right">Data: 02 de Novembro de 2023</p>
 
@@ -36,7 +42,7 @@ const DisplayArticle = () => {
 
             <Image src={article1} alt="Code" className="mb-6 w-full h-1/2" />
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Por Que o display é Importante?
             </h2>
             <p className="">
@@ -48,7 +54,9 @@ const DisplayArticle = () => {
               possível criar layouts complexos e flexíveis.{" "}
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Display Block</h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Display Block
+            </h2>
 
             <p className="mb-6">
               O display block é um display bem presente no comportamento dos
@@ -61,7 +69,9 @@ const DisplayArticle = () => {
               &lt;section&gt;.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Display Inline</h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Display Inline
+            </h2>
             <p className="">
               Os elementos com display inline são exibidos na mesma linha que
               outros elementos, seguindo um fluxo como texto. Eles não permitem
@@ -70,7 +80,7 @@ const DisplayArticle = () => {
               &lt;span&gt;, &lt;a&gt; e &lt;strong&gt;.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Display Inline-block
             </h2>
             <p className="">
@@ -81,7 +91,9 @@ const DisplayArticle = () => {
               linha que outros elementos.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Display Flex</h2>
+            <h2 className="mb-6 mt-10!text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Display Flex
+            </h2>
             <p className="">
               O Flexbox é um modelo de layout moderno que oferece grande
               flexibilidade para organizar elementos em uma linha ou coluna. Com
@@ -92,8 +104,10 @@ const DisplayArticle = () => {
               funcionalidades do Flexbox.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Display Grid</h2>
-            <div className="flex mx-auto mb-6 mt-6">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Display Grid
+            </h2>
+            <div className="flex mx-auto mb-6 mt-6 xl:flex-col xl:items-center xl:justify-center">
               <p className="mr-10">
                 O Grid CSS é outro modelo moderno que permite criar layouts
                 bidimensionais usando linhas e colunas. É perfeito para projetos
@@ -101,10 +115,16 @@ const DisplayArticle = () => {
                 dashboards ou galerias de imagens. O inline-grid é semelhante ao
                 inline-flex, mas com a flexibilidade do Grid.
               </p>
-              <Image src={article2} alt="Fogos" className="w-7/12 h-auto" />
+              <Image
+                src={article2}
+                alt="Code"
+                className="w-7/12 h-auto xl:mt-6"
+              />
             </div>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">Display None</h2>
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
+              Display None
+            </h2>
             <p className="">
               Diferente da propriedade &#34;hidden&#34; que o componente fica
               oculto na tela, mas memso assim ele é renderizado a propriedade
@@ -116,7 +136,7 @@ const DisplayArticle = () => {
               em condições ou para animações.
             </p>
 
-            <h2 className="mb-6 mt-10 text-4xl font-bold">
+            <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
               Considerações Finais
             </h2>
             <p className="">

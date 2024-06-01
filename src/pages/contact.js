@@ -1,5 +1,5 @@
-import AnimatedText from "@/components/Global/AnimatedText";
-import Layout from "@/components/Global/Layout";
+import AnimatedText from "@/components/global/AnimatedText";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import { motion, useInView } from "framer-motion";
 import {
@@ -10,10 +10,10 @@ import {
   TelephoneIcon,
   TelephoneIconLight,
   WhatsAppIconContact,
-} from "@/components/Global/Icons";
+} from "@/components/global/Icons";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ColorsCircle from "@/components/Global/ColorsCircle";
+import ColorsCircle from "@/components/global/ColorsCircle";
 
 const variants = {
   initial: {

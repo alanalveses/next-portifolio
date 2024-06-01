@@ -18,12 +18,12 @@ import {
   ResilienceIcon,
   SetaIcon,
   TeamWorkIcon,
-} from "@/components/Global/InonsSkills";
-import Layout from "@/components/Global/Layout";
+} from "@/components/global/InonsSkills";
+import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { GearIcon, PhoneCallingIconLight } from "@/components/Global/Icons";
+import { GearIcon, PhoneCallingIconLight } from "@/components/global/Icons";
 
 const variants = {
   initial: {
@@ -67,7 +67,6 @@ const More = () => {
         <title>Alan Alves | Mais</title>
         <meta nameName="description" content="any description" />
       </Head>
-
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="grid grid-cols-1 2xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-white shadow-xl shadow-neutral-100 border p-5 mt-32">

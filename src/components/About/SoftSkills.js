@@ -19,7 +19,7 @@ import {
   ResilienceIcon,
   SetaIcon,
   TeamWorkIcon,
-} from "@/components/Global/InonsSkills";
+} from "@/components/global/InonsSkills";
 
 const SoftSkill = ({ x, y, icon, color, secondColor, text }) => {
   return (
@@ -216,7 +216,7 @@ const SoftSkills = () => {
             color={"bg-lime-500"}
             secondColor={"shadow-lime-200"}
             x="-14vw"
-            y="29vw"
+            y="27vw"
             text="Adaptação"
           />
 

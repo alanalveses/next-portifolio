@@ -4,6 +4,9 @@ import React, { useRef, useState } from "react";
 
 import article1 from "../../../public/images/articles/article-graduacao.jpg";
 import article2 from "../../../public/images/articles/display.jpg";
+import article3 from "../../../public/images/articles/smile.jpg";
+import article4 from "../../../public/images/articles/css.jpg";
+import article5 from "../../../public/images/articles/alan.jpg";
 import { motion, useMotionValue } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -72,10 +75,17 @@ const ArticlesList = () => {
 
   const ArticleTest = [
     {
+      title: "Quem sou eu além do perfil profissional",
+      date: "24 de Abril, 2024",
+      link: "/articles/AlanArticle",
+      img: article5,
+      category: "pessoal",
+    },
+    {
       title:
         "A decisão de ingressar em uma área deve ser impulsionada por sua curiosidade natural e um fascínio, algo que te faz querer mais.",
       date: "20 de Janeiro, 2024",
-      link: "../Articles/GraduationArticle",
+      link: "../articles/GraduationArticle",
       img: article1,
       target: "_self",
       category: "pessoal",
@@ -84,31 +94,24 @@ const ArticlesList = () => {
       title:
         "Entendendo o Atributo Display no CSS: Um dos Atributos Mais Importantes na Estilização.",
       date: "02 de Novembro, 2023",
-      link: "../Articles/DisplayArticle",
+      link: "../articles/DisplayArticle",
       img: article2,
       category: "programacao",
       target: "_self",
     },
     {
-      title: "Equilibrando Saúde, Trabalho e Vida: Uma Jornada Pessoal.",
-      date: "24 de Abril, 2023",
-      link: "/Articles/EquilibriumArticle",
-      img: article2,
-      category: "outros",
-    },
-    {
-      title: "Pessoal",
-      date: "11 de Julho, 1999",
-      link: "/article",
-      img: article1,
-      category: "pessoal",
-    },
-    {
-      title: "Programação",
-      date: "20 de Junho, 1999",
-      link: "/articleCSS",
-      img: article2,
+      title: "Guia de CSS: Fundamentos para compreender a estilização",
+      date: "09 de Outubro, 2023",
+      link: "/articles/CssArticle",
+      img: article4,
       category: "programacao",
+    },
+    {
+      title: "Equilibrando Saúde, Trabalho e Vida: Uma Jornada Pessoal.",
+      date: "14 de Abril, 2023",
+      link: "/articles/EquilibriumArticle",
+      img: article3,
+      category: "outros",
     },
     {
       title: "Pessoal",
