@@ -116,7 +116,7 @@ const ArticlesList = () => {
     {
       title: "Pessoal",
       date: "20 de Maio, 1999",
-      link: "/article",
+      link: "/articles/AlanArticle",
       img: article1,
       category: "pessoal",
     },
