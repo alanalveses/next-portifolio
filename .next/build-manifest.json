@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/x07W_6T0w5vP2JHM9mcmm/_buildManifest.js",
-    "static/x07W_6T0w5vP2JHM9mcmm/_ssgManifest.js"
+    "static/qE6iB5AfEGgY3Owtknm2p/_buildManifest.js",
+    "static/qE6iB5AfEGgY3Owtknm2p/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -42,35 +42,35 @@
       "static/chunks/main-48a2be0192cdda09.js",
       "static/chunks/pages/articles-0f72d8a0a4511904.js"
     ],
-    "/articles/CssArticle": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-2c16ac744b6cdea6.js",
-      "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/articles/CssArticle-c777c5bfdf578d15.js"
-    ],
-    "/articles/DisplayArticle": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-2c16ac744b6cdea6.js",
-      "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/articles/DisplayArticle-c9a40249d02b89de.js"
-    ],
-    "/articles/EquilibriumArticle": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-2c16ac744b6cdea6.js",
-      "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/articles/EquilibriumArticle-fa5dc1539883de10.js"
-    ],
-    "/articles/GraduationArticle": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-2c16ac744b6cdea6.js",
-      "static/chunks/main-48a2be0192cdda09.js",
-      "static/chunks/pages/articles/GraduationArticle-8bf39531457e259d.js"
-    ],
     "/articles/alanArticle": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-2c16ac744b6cdea6.js",
       "static/chunks/main-48a2be0192cdda09.js",
       "static/chunks/pages/articles/alanArticle-f57626b3d92665cc.js"
+    ],
+    "/articles/cssArticle": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c16ac744b6cdea6.js",
+      "static/chunks/main-48a2be0192cdda09.js",
+      "static/chunks/pages/articles/cssArticle-e228a7f9b2a6b248.js"
+    ],
+    "/articles/displayArticle": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c16ac744b6cdea6.js",
+      "static/chunks/main-48a2be0192cdda09.js",
+      "static/chunks/pages/articles/displayArticle-6c1cea94e69d455b.js"
+    ],
+    "/articles/equilibriumArticle": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c16ac744b6cdea6.js",
+      "static/chunks/main-48a2be0192cdda09.js",
+      "static/chunks/pages/articles/equilibriumArticle-82d5b3d48adfabaf.js"
+    ],
+    "/articles/graduationArticle": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c16ac744b6cdea6.js",
+      "static/chunks/main-48a2be0192cdda09.js",
+      "static/chunks/pages/articles/graduationArticle-22ad12106f231082.js"
     ],
     "/contact": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
