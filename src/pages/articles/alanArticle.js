@@ -4,20 +4,21 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 
-import article1 from "../../../public/images/articles/css.jpg";
-import article2 from "../../../public/images/articles/responsive.png";
+import article1 from "../../../public/images/articles/profile.jpg";
+import article2 from "../../../public/images/articles/violin.jpg";
+import article3 from "../../../public/images/articles/animes.jpg";
 
 const AlanArticle = () => {
   return (
     <>
       <Head>
-        <title>Alan Alves | Artigo</title>
+        <title>Alan Alves | Artigo Alan</title>
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-24">
           <AnimatedText
-            text="Quem sou eu? Um história sobre mim, contada por mim"
+            text="Quem sou eu além do perfil profissional?"
             className="!text-6xl sm:!text-5xl xs:!text-4xl"
           />
           <div
@@ -25,211 +26,193 @@ const AlanArticle = () => {
           lg:mr-32 lg:ml-32 md:mr-24 md:ml-24 sm:mr-20 sm:ml-20 xs:mr-10 xs:ml-10 xxs:mr-0 xxs:ml-0"
           >
             <p className="text-right">Autor: Alan Alves</p>
-            <p className="mb-12 text-right">Data: 09 de Outubro de 2023</p>
+            <p className="mb-12 text-right">Data: 18 de Junho de 2024</p>
 
             <p className="mb-12">
-              O CSS (Cascading Style Sheets) é uma linguagem de estilização
-              essencial para o desenvolvimento web, responsável por controlar a
-              apresentação visual de uma página HTML. Com o CSS, desenvolvedores
-              podem transformar um simples documento HTML em um site visualmente
-              atraente e funcional. Ele permite aplicar estilos como cores,
-              fontes, espaçamento e layout aos elementos de uma página web. Este
-              artigo explora desde os fundamentos até algumas técnicas avançadas
-              de CSS, ajudando iniciantes a aprimorar suas habilidades.
+              Olá! Eu sou Alan Alves, sou natural da Bahia e moro em São Paulo
+              há 6 anos. Atualmente, tenho 25 anos e sou graduado em
+              Desenvolvimento de Sistemas. Sou uma pessoa apaixonada por
+              tecnologia, jogos digitais, animes e música erudita. Neste espaço,
+              gostaria de compartilhar um pouco sobre minha jornada, meus
+              interesses e o que me motiva diariamente.
             </p>
 
             <Image src={article1} alt="Code" className="mb-6 w-full h-1/2" />
 
             <h2 className="mb-6 mt-10 !text-4xl sm:!text-3xl xs:!text-2xl font-bold">
-              Estrutura Básica
+              Minha Jornada
             </h2>
+            <p className="mb-6">
+              Nascido e criado no interior da Bahia, tive uma infância repleta
+              de marcos para minha história. Onde fui criado, a realidade é bem
+              diferente da cidade grande. Ter essa troca de realidade no início
+              foi bem desafiador, por causa do medo do desconhecido, mas graças
+              a isso pude evoluir como pessoa. Hoje sei que posso alcançar tudo
+              o que quero, com muita dedicação, esforço, persistência e
+              superando quedas. Quando cheguei em São Paulo, pude falar: &#34;É,
+              agora sou um adulto e terei que ser responsável por mim
+              mesmo&#34;.
+            </p>
             <p className="">
-              A estrutura básica de um arquivo CSS consiste em seletores e
-              declarações. Um seletor aponta para o elemento HTML que você quer
-              estilizar, enquanto a declaração define o estilo a ser aplicado,
-              composta por uma propriedade e um valor.
+              Morar sozinho em um lugar desconhecido foi intenso. Meu maior
+              problema foi a confiança; em minha visão, tudo e todos eram
+              confiáveis, mas descobri que &#34;confie desconfiado&#34; é um
+              ditado real. Além disso, tive vários outros impasses nesta
+              jornada. Hoje posso dizer que evoluí de uma forma que nunca
+              imaginaria. Penso de uma forma que jamais pensei antes, com uma
+              mistura de otimismo e realidade, conseguindo superar obstáculos
+              que para muitos são &#34;impossíveis&#34;.
             </p>
 
             <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Seletores
+              Meus Interesses
             </h2>
 
             <p className="mb-6">
-              Os seletores são a base do CSS, permitindo que você aplique
-              estilos a elementos específicos no seu documento HTML, há outros
-              meios de utilizar o CSS como: inline, com frameworks e interno no
-              head do HTML, mas aqui iremos abortar o CSS tradicional usando
-              seletores. Os seletores podem ser IDs, classes, type ou as tag do
-              HTML, por exempo: &lt;div&gt;, &lt;h1&gt;, &lt;p&gt; e
-              &lt;section&gt;.
+              Desde cedo, fui cativado pela ciência. Sempre quis saber tudo
+              sobre algo; eu me perguntava sobre tudo e tentava buscar respostas
+              em outros lugares. Às vezes, até meus professores ficavam
+              irritados com minhas perguntas. Enquanto não descobria o que
+              queria, não parava, e isso continua sendo uma parte significativa
+              da minha vida.
             </p>
-
-            <ul className="flex flex-col gap-4">
-              <li>
-                Tags HTML: Aplica estilos a todas as instâncias de um elemento
-                (h1, p).
-              </li>
-              <li>
-                Classe: Aplica estilos a elementos que têm uma determinada
-                classe (.classe).
-              </li>
-              <li>
-                ID: Aplica estilos a um único elemento com um ID específico
-                (#id).
-              </li>
-              <li>
-                Atributo: Aplica estilos a elementos que possuem um determinado
-                atributo (input[type=&#34;text&#34;]).
-              </li>
-              <li>
-                Combinados: Permitem a combinação de seletores para maior
-                especificidade (div .classe p). Aqui a estilização será apenas
-                na tag p dentro da classe que esta dendo da div.
-              </li>
-            </ul>
-
-            <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Propriedades e Valores
-            </h2>
-            <ul className="flex flex-col gap-4">
-              <li>
-                Cor e Fundo: Controle das cores de texto e de fundo dos
-                elementos (color, background-color, background-image).
-              </li>
-              <li>
-                Texto: Estilização do texto (font-size, font-family, text-align,
-                line-height).
-              </li>
-              <li>
-                Modelo de Caixa: Manipulação do espaço ao redor dos elementos
-                (margin, padding, border, width, height).
-              </li>
-              <li>
-                Posicionamento: Controle da posição dos elementos na página
-                (position, top, right, bottom, left).
-              </li>
-              <li>
-                Display: Block, Inline, Grid e Flexbox, grid e flexbox são
-                modelos de layout avançados para organizar o conteúdo de maneira
-                eficiente.
-              </li>
-            </ul>
-            <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Flexbox
-            </h2>
             <p className="">
-              Flexbox é um modelo de layout unidimensional que facilita a
-              organização de elementos em linhas ou colunas, ajustando-se
-              automaticamente ao espaço disponível. Flexbox é particularmente
-              útil para criar layouts dinâmicos e responsivos.
+              Como toda criança, sempre gostei de desenhos. Amava todos os
+              tipos, principalmente os educativos. Foram justamente os desenhos
+              que me levaram a esse fascínio pela tecnologia.
+              &#34;Cyberchase&#34; é um desenho educativo sobre tecnologia com
+              ensinamentos matemáticos e citações de tecnologia. &#34;Sword Art
+              Online&#34; é um anime que combina tecnologia avançada com jogos
+              de simulação da realidade, onde o jogo se torna a realidade.
+              &#34;Astro Boy&#34; é um anime clássico de ficção científica
+              ambientado em um mundo futurístico, onde androides convivem com
+              seres humanos após o apogeu da tecnologia, repleto de
+              inteligências artificiais e cidades totalmente inorgânicas.
             </p>
-
-            <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Grid Layout
-            </h2>
-            <p className="">
-              Grid Layout é um sistema bidimensional de layout que permite criar
-              grades complexas de elementos. Ele facilita a divisão da página em
-              regiões principais e a definição de relações de tamanho, posição e
-              camada entre partes do conteúdo.
+            <p className="mb-6">
+              Hoje, ainda gosto de desenhos, especialmente animes, desenhos
+              japoneses mais voltados para o público adolescente e adulto.
             </p>
-
-            <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Media Queries
-            </h2>
-            <div className="flex mx-auto mb-6 mt-6 xl:flex-col xl:items-center xl:justify-center">
-              <p className="mr-10">
-                Media Queries são regras CSS que permitem aplicar estilos
-                diferentes com base em características do dispositivo, como a
-                largura da tela. Isso é essencial para o design responsivo,
-                garantindo que sua página fique bem em qualquer dispositivo,
-                desde desktops até smartphones.
+              
+              <Image
+                src={article3}
+                alt="Anime"
+                className="mb-6 w-full h-1/2"
+              />
+              <p className="">
+              Como toda criança, sempre gostei de desenhos. Amava todos os
+              tipos, principalmente os educativos. Foram justamente os desenhos
+              que me levaram a esse fascínio pela tecnologia.
+              &#34;Cyberchase&#34; é um desenho educativo sobre tecnologia com
+              ensinamentos matemáticos e citações de tecnologia. &#34;Sword Art
+              Online&#34; é um anime que combina tecnologia avançada com jogos
+              de simulação da realidade, onde o jogo se torna a realidade.
+              &#34;Astro Boy&#34; é um anime clássico de ficção científica
+              ambientado em um mundo futurístico, onde androides convivem com
+              seres humanos após o apogeu da tecnologia, repleto de
+              inteligências artificiais e cidades totalmente inorgânicas. <br></br>
+              Hoje, ainda gosto de desenhos, especialmente animes, desenhos
+              japoneses mais voltados para o público adolescente e adulto.
               </p>
+            
+           
+              <p className="mr-10">
+              Música? Adoro música. Meus gêneros favoritos são aqueles com
+              presenças marcantes de instrumentos musicais, como eletrônica,
+              rock e erudita. Meu gênero predileto é a música erudita, a qual
+              conheci através dos animes do estúdio Ghibli. Todas as obras desse
+              estúdio possuem trilhas sonoras instrumentais ou voltadas para
+              ópera, muitas delas compostas por Mamoru Fujisawa, conhecido
+              profissionalmente como Joe Hisaishi. Ele é um compositor e diretor
+              musical que admiro profundamente e que já criou mais de 100
+              trilhas sonoras de filmes e álbuns solo desde 1981.
+              </p>
+             
               <Image
                 src={article2}
-                alt="Code"
-                className="w-7/12 h-auto xl:mt-6"
+                alt="Violino"
+                className="mb-6 mt-6 w-full h-1/2"
               />
-            </div>
+            
+            <p className="mb-6">
+              Além de Joe Hisaishi, também aprecio compositores contemporâneos
+              como Lindsey Stirling, Ludovico Einaudi e Taylor Davis, bem como
+              os compositores históricos como Beethoven, Bach, Vivaldi, Chopin e
+              Mozart. Recentemente, o Google fez uma homenagem encantadora a
+              Bach, utilizando inteligência artificial treinada com suas
+              composições para gerar uma breve melodia. Você pode conferir isso
+              no link a seguir: ao lado esquerdo do nome de Bach, haverá um
+              ícone. Clicando nele, abrirá o demonstrativo com IA: &nbsp;
+              <strong>
+                <a
+                  className="text-primary dark:text-primaryDark underline"
+                  href="https://www.google.com/search?sca_esv=9b22f68bf05ca09c&sca_upv=1&rlz=1C1PNFE_enBR1053BR1053&sxsrf=ADLYWIJYRGftCSCFyp_bux6v-AJhK6_MWw:1716780623743&q=Johann+Sebastian+Bach&si=ACC90nw5lwTj0y78C6qQHMsDR7nr_1_OQUI3csNfg6mi3uhU2Ze4FYWEdWxt7u8f9cHweFsFakthsbPpJYLSaHCD2fJ7DYKobysIB_wSTitH4TF12Ep7TkHzQ8_ARg2409Z7Qbb77PMwOsMtasJx6qlyN96okamZS3Ubsu7uBVxQYLfhLT7QZlYozKNV3GavrfuqPqcgCx4E7nILrJ9sLNjFpVHJjI7aibBB1Y3fM22Z4W1WRIrnDIUkEgsY2LuuHwosdg1vbT3zDquutdt8ovkUDWbUL0sAvGcdwxvPgmSreML6rPsjpq8fI9T81MJD6bH8a5sWG7a8hoh9itj7SimW7Os6EzLIGg%3D%3D&sa=X&ved=2ahUKEwiK3vCZ8qyGAxWZqZUCHdzSCpkQ3LoBegQICRAB&biw=1366&bih=599&dpr=1"
+                  target="_blank"
+                >
+                  aqui
+                </a>
+              </strong>
+              . Essa é a minha composição: &nbsp;
+              <strong>
+                <a
+                  className="text-primary dark:text-primaryDark underline"
+                  href="//g.co/doodle/zcrs2vf"
+                  target="_blank"
+                >
+                  aqui
+                </a>
+              </strong>
+              .
+            </p>
 
+            <p className="mb-6">
+              Além disso, comecei a aprender a tocar violino, algo que sempre
+              desejei profundamente. Não só pelo apreço que tenho pelo som e
+              pelas obras eruditas, mas também pela fascinação e atração que o
+              instrumento exerce sobre mim. Tocar violino exige muita dedicação
+              e atenção, e estou comprometido a investir o tempo e o esforço
+              necessários para me aprimorar.
+            </p>
+            
             <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Animações e Transições
+              Valores e Crenças
             </h2>
             <p className="">
-              CSS permite a criação de animações e transições para melhorar a
-              experiência do usuário. As transições suavizam a mudança de um
-              estilo para outro, enquanto as animações permitem mudanças mais
-              complexas e repetitivas nos estilos.
+              Meus valores são profundamente influenciados pelas experiências
+              que vivenciei ao longo dos anos. Acredito firmemente na
+              importância de uma boa comunicação, planejamento, evolução e
+              empatia em todos os contextos. Colocar-se no lugar do outro
+              permite entender melhor a situação. Essas crenças me guiam nas
+              minhas ações e interações diárias.
             </p>
 
             <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Tipos de organização do código
+              O que me motiva
             </h2>
             <p className="">
-              A organização do código CSS é vital para facilitar a manutenção e
-              a escalabilidade do projeto. Manter o código bem estruturado
-              permite localizar rapidamente seções específicas e entender a
-              lógica subjacente. O uso de comentários é uma prática recomendada,
-              pois descreve seções e blocos de estilo, tornando o código mais
-              compreensível para outros desenvolvedores e para você mesmo no
-              futuro. Adotar convenções de nomenclatura, como o método BEM
-              (Block, Element, Modifier), ajuda a criar nomes de classes mais
-              descritivos e organizados, melhorando a clareza do código. Além
-              disso, modularizar o CSS, dividindo-o em vários arquivos menores
-              conforme necessário, facilita a manutenção e o gerenciamento de
-              estilos específicos, como layout, componentes ou temas. Existes
-              outros meios de utilizar o CSS, cada um com um tipo de organização
-              e especificidades como: CSS em Pré-processadores, CSS em
-              Frameworks, CSS em Componentes (CSS-in-JS) e CSS Modular.
+              Sou motivado pela curiosidade e pela vontade de aprender mais
+              sobre diversos assuntos. A sensação de realização ao conquistar
+              algo, como concluir um projeto ou aprender algo novo, e ver o
+              impacto positivo que causei, me impulsiona a continuar me
+              esforçando e crescendo.
             </p>
-
             <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
-              Performance do código
+              Sonhos e Aspirações
             </h2>
             <p className="">
-              A performance é outro aspecto crucial no desenvolvimento web, pois
-              CSS bem otimizado pode reduzir significativamente o tempo de
-              carregamento das páginas, proporcionando uma experiência de
-              navegação mais rápida e fluida. Minificar o CSS, removendo espaços
-              em branco, comentários e caracteres desnecessários, resulta em
-              arquivos menores que carregam mais rapidamente. Ferramentas como
-              CSSNano ou UglifyCSS podem automatizar esse processo. Compactar
-              arquivos CSS, agrupando múltiplos arquivos em um só e utilizando
-              técnicas de compactação no servidor, como Gzip, também melhora a
-              performance. Além disso, carregar CSS adicional apenas quando
-              necessário, utilizando media queries para carregar estilos
-              específicos para dispositivos móveis, por exemplo, evita carregar
-              CSS desnecessário em outras circunstâncias.
+              Tenho muitos sonhos e aspirações. Entre eles, ser um programador
+              de sucesso, proporcionar uma vida melhor para meus pais, tocar
+              violino proficientemente e conhecer diferentes países. Acredito
+              que, com determinação e paixão, posso realizar esses sonhos e
+              continuar a crescer como pessoa.
             </p>
 
             <h2 className="mb-6 mt-10 !text-3xl sm:!text-2xl xs:!text-xl font-bold">
               Considerações Finais
             </h2>
             <p className="">
-              CSS é uma ferramenta essencial para qualquer desenvolvedor web,
-              oferecendo poder e flexibilidade para criar páginas web atraentes
-              e funcionais. Dominar tanto os fundamentos quanto as técnicas
-              avançadas de CSS permitirá que você crie designs responsivos,
-              acessíveis e visualmente impactantes. Continuar praticando e
-              explorando as possibilidades do CSS é a chave para aprimorar suas
-              habilidades e criar experiências web excepcionais.
-            </p>
-            <p className="mt-2">
-              Neste link você confere o site do{" "}
-              <strong>
-                <a
-                  className="text-primary dark:text-primaryDark"
-                  href="https://www.w3schools.com/cssref/css4_pr_accent-color.php"
-                  target="_blank"
-                >
-                  w3schools
-                </a>
-              </strong>
-              , esse site oferece códigos pré prontos para você praticar, testar
-              e modificar. Para aprofundar seu conhecimento, experimente
-              diferentes valores e observe como eles afetam a disposição dos
-              elementos. A prática é a melhor maneira de dominar as nuances do
-              CSS e se tornar um dev front-end de qualidade.
+            Esta é uma breve visão sobre quem eu sou. Minha vida é moldada por minhas experiências, interesses e valores. Ao compartilhar um pouco sobre minha jornada, espero que você tenha uma ideia de quem eu sou e o que me inspira. Estou sempre aberto a novas experiências e aprendizados, ansioso para ver onde a vida me levará a seguir. Acredito que, com determinação, curiosidade e paixão, posso alcançar meus sonhos e continuar a evoluir como pessoa e profissional.
+
             </p>
           </div>
         </Layout>

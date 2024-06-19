@@ -396,7 +396,7 @@ const SoftSkills = () => {
             secondColor={"shadow-lime-200"}
             x="-10vw"
             y="33vw"
-            text="Adaptação"
+            text="Adaptabilidade"
           />
 
           <SoftSkill

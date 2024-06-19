@@ -1,5 +1,5 @@
 import Footer from "@/components/footer/Footer";
-import NavBar from "@/components/Navigation/NavBar";
+import NavBar from "@/components/navigation/NavBar";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";

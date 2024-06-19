@@ -45,8 +45,10 @@ const HardSkills = () => {
             <Skill name="React JS" x="-14vw" y="-7vw" />
             <Skill name="CSS" x="0vw" y="-10vw" />
             <Skill name="JavaScript" x="20vw" y="6vw" />
+            <Skill name="Testing Library" x="33vw" y="12vw" />
             <Skill name="Spring" x="3vw" y="12vw" />
             <Skill name="Next JS" x="-20vw" y="-15vw" />
+            <Skill name="Jest" x="-31vw" y="-11vw" />
             <Skill name="Web Design" x="15vw" y="-14vw" />
             <Skill name="Framer Motion" x="32vw" y="-7vw" />
             <Skill name="Tailwind CSS" x="-28vw" y="-2vw" />

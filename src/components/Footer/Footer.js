@@ -7,7 +7,6 @@ import {
   TelephoneIcon,
   InstagramIcon,
   EmailIcon,
-  EasterEggIcon,
   TelephoneIconLight,
   EmailIconLight,
 } from "../global/Icons";
@@ -86,9 +85,9 @@ function Footer() {
         </div>
 
         <Link
-          href="/"
+          href="/contact"
           className="underline underline-offset-2 "
-          target="_blank"
+          target="_self"
         >
           Oizinho
         </Link>
@@ -106,7 +105,7 @@ function Footer() {
           </span>
           Por&nbsp;
           <Link
-            href="/"
+            href="https://www.linkedin.com/in/alanalveses/"
             className="underline underline-offset-2"
             target="_blank"
           >
@@ -115,7 +114,7 @@ function Footer() {
         </div>
 
         <Link
-          href="/"
+          href="https://www.linkedin.com/in/alanalveses/"
           className="underline underline-offset-2 max-w-10 "
           target="_blank"
         ></Link>

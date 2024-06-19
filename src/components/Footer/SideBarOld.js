@@ -32,7 +32,6 @@ const SideBarOld = () => {
     >
       <motion.div className=" w-96 bg-light" variants={variants}>
         <Link href={"/"} className="w-full h-full flex items-center gap-20">
-          {/* Conteúdo do link aqui */}
         </Link>
       </motion.div>
       <ToggleButton setOpen={setOpen} />

@@ -13,7 +13,7 @@ const GraduationArticle = () => {
   return (
     <>
       <Head>
-        <title>Alan Alves | Artigo</title>
+        <title>Alan Alves | Artigo Graduação</title>
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">

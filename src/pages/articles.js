@@ -84,7 +84,7 @@ const articles = () => {
               title="Sonho da Graduação."
               summary="Artigo de autoria própria que conta um pouco sobre minha trajetória acadêmica."
               time="7 minutos de leitura"
-              link="../articles/GraduationArticle"
+              link="/articles/graduationArticle"
               target="_self"
               img={article1}
             />
@@ -92,7 +92,7 @@ const articles = () => {
               title="O que é display no CSS?"
               summary="Entendendo o Atributo Display no CSS: Um dos Atributo Mais Importantes na Estilização."
               time="5 minutos de leitura"
-              link="../articles/DisplayArticle"
+              link="/articles/displayArticle"
               target="_self"
               img={article2}
             />

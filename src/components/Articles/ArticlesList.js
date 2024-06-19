@@ -7,6 +7,7 @@ import article2 from "../../../public/images/articles/display.jpg";
 import article3 from "../../../public/images/articles/smile.jpg";
 import article4 from "../../../public/images/articles/css.jpg";
 import article5 from "../../../public/images/articles/alan.jpg";
+import article6 from "../../../public/images/articles/alan.jpg";
 import { motion, useMotionValue } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -75,17 +76,18 @@ const ArticlesList = () => {
 
   const ArticleTest = [
     {
-      title: "Quem sou eu além do perfil profissional",
-      date: "24 de Abril, 2024",
-      link: "../articles/AlanArticle",
+      title: "Quem sou eu além do perfil profissional?",
+      date: "18 de Junho, 2024",
+      link: "/articles/alanArticle",
       img: article5,
+      target: "_self",
       category: "pessoal",
     },
     {
       title:
         "A decisão de ingressar em uma área deve ser impulsionada por sua curiosidade natural e um fascínio, algo que te faz querer mais.",
       date: "20 de Janeiro, 2024",
-      link: "../articles/GraduationArticle",
+      link: "/articles/graduationArticle",
       img: article1,
       target: "_self",
       category: "pessoal",
@@ -94,7 +96,7 @@ const ArticlesList = () => {
       title:
         "Entendendo o Atributo Display no CSS: Um dos Atributos Mais Importantes na Estilização.",
       date: "02 de Novembro, 2023",
-      link: "../articles/DisplayArticle",
+      link: "/articles/displayArticle",
       img: article2,
       category: "programacao",
       target: "_self",
@@ -102,28 +104,28 @@ const ArticlesList = () => {
     {
       title: "Guia de CSS: Fundamentos para compreender a estilização",
       date: "09 de Outubro, 2023",
-      link: "../articles/CssArticle",
+      link: "/articles/cssArticle",
       img: article4,
       category: "programacao",
     },
     {
       title: "Equilibrando Saúde, Trabalho e Vida: Uma Jornada Pessoal.",
       date: "14 de Abril, 2023",
-      link: "../articles/EquilibriumArticle",
+      link: "/articles/equilibriumArticle",
       img: article3,
       category: "outros",
     },
     {
       title: "Pessoal",
       date: "20 de Maio, 1999",
-      link: "../articles/AlanArticle",
+      link: "/articles/alanArticle",
       img: article1,
       category: "pessoal",
     },
     {
       title: "Outros",
       date: "24 de Abril, 1999",
-      link: "../articles/AlanArticle",
+      link: "/articles/alanArticle",
       img: article2,
       category: "outros",
     },
