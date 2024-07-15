@@ -7,7 +7,6 @@ import article2 from "../../../public/images/articles/display.jpg";
 import article3 from "../../../public/images/articles/smile.jpg";
 import article4 from "../../../public/images/articles/css.jpg";
 import article5 from "../../../public/images/articles/alan.jpg";
-import article6 from "../../../public/images/articles/alan.jpg";
 import { motion, useMotionValue } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -113,20 +112,6 @@ const ArticlesList = () => {
       date: "14 de Abril, 2023",
       link: "/articles/equilibriumArticle",
       img: article3,
-      category: "outros",
-    },
-    {
-      title: "Pessoal",
-      date: "20 de Maio, 1999",
-      link: "/articles/alanArticle",
-      img: article1,
-      category: "pessoal",
-    },
-    {
-      title: "Outros",
-      date: "24 de Abril, 1999",
-      link: "/articles/alanArticle",
-      img: article2,
       category: "outros",
     },
   ];

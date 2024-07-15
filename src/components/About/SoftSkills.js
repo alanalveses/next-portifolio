@@ -306,7 +306,7 @@ const SoftSkills = () => {
             secondColor={"shadow-indigo-200"}
             x="16vw"
             y="-14vw"
-            text="Comunicação Acertiva"
+            text="Comunicação Assertiva"
           />
 
           <SoftSkill
