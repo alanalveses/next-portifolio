@@ -10,8 +10,10 @@ import project3 from "../../public/images/projects/anime-lud.png";
 import project4 from "../../public/images/projects/fokus.png";
 import projectSorriaMais from "../../public/images/projects/sorria-mais.jpg";
 import projectDelicaVania from "../../public/images/projects/delicias-vania.jpg";
-import projectWeatheroPokemon from "../../public/images/projects/weathero-pokemon-1.jpg";
+import projectWeatheroPokemon from "../../public/images/projects/weathero-pokemon.jpg";
+import projectNerdHub from "../../public/images/projects/nerd-hub.jpg";
 import projectKaoak from "../../public/images/projects/kaoak.jpg";
+import projectLojinhaDoces from "../../public/images/projects/lojinha-doces.jpg";
 import SideBar from "@/components/footer/SideBar";
 import ColorsCircle from "@/components/global/ColorsCircle";
 import { motion } from "framer-motion";
@@ -74,9 +76,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+        <div className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
-        </p>
+        </div>
+
         <div className="mt-2 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -176,11 +179,34 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Sorria +"
-                summary="Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, com o suporte de frameworks e bibliotecas como Bootstrap, AOS, e Swiper, para criar um website responsivo e moderno.
-                O objetivo principal foi proporcionar uma experiência agradável e funcional, conectando a clínica Sorria+ a seus pacientes de maneira eficiente. O site conta com uma interface intuitiva, destacando informações essenciais sobre os serviços oferecidos, equipe de profissionais, contato e localização.
-                Funcionalidades incluem:
-                Animações dinâmicas, galeria de imagens interativa, carrosséis de conteúdo, filtragem de conteúdo dinâmica.
-                O design responsivo garante uma navegação consistente em qualquer dispositivo, posicionando a Sorria+ como uma clínica inovadora e acessível para seus pacientes."
+                summary={
+                  <>
+                    <p>
+                      Este projeto foi desenvolvido utilizando HTML, CSS e
+                      JavaScript, com o suporte de frameworks e bibliotecas como
+                      Bootstrap, AOS, e Swiper, para criar um website responsivo
+                      e moderno.
+                    </p>
+                    <p>
+                      O objetivo principal foi proporcionar uma experiência
+                      agradável e funcional, conectando a clínica Sorria+ a seus
+                      pacientes de maneira eficiente. O site conta com uma
+                      interface intuitiva, destacando informações essenciais
+                      sobre os serviços oferecidos, equipe de profissionais,
+                      contato e localização.
+                    </p>
+                    <p>Funcionalidades incluem:</p>
+                    <p>
+                      Animações dinâmicas, galeria de imagens interativa,
+                      carrosséis de conteúdo, filtragem de conteúdo dinâmica.
+                    </p>
+                    <p>
+                      O design responsivo garante uma navegação consistente em
+                      qualquer dispositivo, posicionando a Sorria+ como uma
+                      clínica inovadora e acessível para seus pacientes.
+                    </p>
+                  </>
+                }
                 link="https://clinica-sorria-mais.vercel.app/"
                 target="_blank"
                 type="Projeto em Destaque"
@@ -213,9 +239,37 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Delícias da Vânia"
-                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
-                
-                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
+                summary={
+                  <>
+                    <p>
+                      Projeto desenvolvido com HTML, CSS com Bootstrap e
+                      JavaScript para criar um website responsivo, com o intuito
+                      de oferecer uma experiência prática e simplificada para os
+                      clientes que queiram um dia mais doce.
+                    </p>
+                    <p>
+                      O site desenvolvido para a Delícias da Vânia foi pensado
+                      para valorizar a essência e a qualidade dos doces
+                      oferecidos, criando uma experiência simples e envolvente
+                      para os clientes.
+                    </p>
+                    <p>
+                      Com um design atrativo e navegação prática, o site permite
+                      que os visitantes conheçam o cardápio completo, explorando
+                      com facilidade as opções de bolos, tortas e doces
+                      exclusivos. Além disso, destaca informações importantes
+                      sobre a confeitaria, como contato para encomendas e
+                      localização, facilitando a comunicação entre o negócio e
+                      seus clientes.
+                    </p>
+                    <p>
+                      Totalmente responsivo, o site proporciona uma experiência
+                      consistente em todos os dispositivos, reforçando a conexão
+                      da Delícias da Vânia com seu público e sua paixão por
+                      oferecer sabores únicos.
+                    </p>
+                  </>
+                }
                 link="https://delicias-da-vania.vercel.app/"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/delicias-da-vania"
@@ -225,7 +279,7 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Weathero Pokemon"
+                title="Weathero Pokémon"
                 summary=""
                 link="https://weatherio-blue.vercel.app/#/current-location"
                 type="Projeto em Destaque"
@@ -248,9 +302,26 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Lud Legends"
-                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
-                
-                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
+                summary={
+                  <>
+                    <p>
+                      Projeto desenvolvido com HTML, CSS e JavaScript puros para
+                      criar um website responsivo, com o intuito de oferecer uma
+                      experiência prática e simplificada para ajudar pessoas que
+                      estão iniciando sua jornada no jogo Mobile Legends: Bang
+                      Bang.
+                    </p>
+                    <p>
+                      O website conta com uma interface intuitiva e fácil de
+                      usar, onde os usuários podem acessar informações
+                      essenciais sobre o jogo, como guias para personagens,
+                      dicas para iniciantes, estratégias de jogo e notícias
+                      atualizadas. A navegação é fluida e adaptável a diferentes
+                      dispositivos, garantindo uma experiência consistente em
+                      smartphones, tablets e computadores.
+                    </p>
+                  </>
+                }
                 link="https://lud-legends.vercel.app/"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/lud-legends"
@@ -258,17 +329,28 @@ const projects = () => {
                 img={project1}
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Fokus"
-                summary="Projeto de pomodoro para estudos."
-                link="https://alanalveses.github.io/Fokus/"
+                title="Nerd Hub"
+                summary="Projeto NerdHub."
+                link="https://github.com/alanalveses/nerdhub"
                 type="Projeto em Destaque"
-                github="https://github.com/alanalveses/Fokus-personalizado"
+                github="https://nerd-hub.vercel.app/"
                 target="_blank"
-                img={project4}
+                img={projectNerdHub}
               />
-            </div> */}
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Lojinha de Doces"
+                summary="Projeto de pomodoro para estudos."
+                link="https://github.com/alanalveses/lojinha-doces"
+                type="Projeto em Destaque"
+                github="https://lojinha-doces.vercel.app/"
+                target="_blank"
+                img={projectLojinhaDoces}
+              />
+            </div>
           </div>
           <SideBar />
         </Layout>
