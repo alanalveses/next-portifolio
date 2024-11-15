@@ -30,7 +30,7 @@ const AlanArticle = () => {
 
             <p className="mb-12">
               Olá! Eu sou Alan Alves, sou natural da Bahia e moro em São Paulo
-              há 6 anos. Atualmente, tenho 25 anos e sou graduado em
+              há 7 anos. Atualmente, tenho 25 anos e sou graduado em
               Desenvolvimento de Sistemas. Sou uma pessoa apaixonada por
               tecnologia, jogos digitais, animes e música erudita. Neste espaço,
               gostaria de compartilhar um pouco sobre minha jornada, meus

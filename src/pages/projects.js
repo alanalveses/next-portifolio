@@ -8,6 +8,10 @@ import project1 from "../../public/images/projects/lud-legends.png";
 import project2 from "../../public/images/projects/confeitaria-leide.png";
 import project3 from "../../public/images/projects/anime-lud.png";
 import project4 from "../../public/images/projects/fokus.png";
+import projectSorriaMais from "../../public/images/projects/sorria-mais.jpg";
+import projectDelicaVania from "../../public/images/projects/delicias-vania.jpg";
+import projectWeatheroPokemon from "../../public/images/projects/weathero-pokemon-1.jpg";
+import projectKaoak from "../../public/images/projects/kaoak.jpg";
 import SideBar from "@/components/footer/SideBar";
 import ColorsCircle from "@/components/global/ColorsCircle";
 import { motion } from "framer-motion";
@@ -171,22 +175,24 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2 xs:mr-2">
             <div className="col-span-12">
               <FeaturedProject
-                title="Lud Legends"
-                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
-                
-                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
-                link="https://lud-legends.vercel.app/"
+                title="Sorria +"
+                summary="Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, com o suporte de frameworks e bibliotecas como Bootstrap, AOS, e Swiper, para criar um website responsivo e moderno.
+                O objetivo principal foi proporcionar uma experiência agradável e funcional, conectando a clínica Sorria+ a seus pacientes de maneira eficiente. O site conta com uma interface intuitiva, destacando informações essenciais sobre os serviços oferecidos, equipe de profissionais, contato e localização.
+                Funcionalidades incluem:
+                Animações dinâmicas, galeria de imagens interativa, carrosséis de conteúdo, filtragem de conteúdo dinâmica.
+                O design responsivo garante uma navegação consistente em qualquer dispositivo, posicionando a Sorria+ como uma clínica inovadora e acessível para seus pacientes."
+                link="https://clinica-sorria-mais.vercel.app/"
                 target="_blank"
                 type="Projeto em Destaque"
-                github="https://github.com/alanalveses/lud-legends"
-                img={project1}
+                github="https://github.com/alanalveses/Clinica-Sorria-Mais"
+                img={projectSorriaMais}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Confeitaria da Leide"
+                title="Leide Bolos"
                 summary=""
-                link="https://confeitaria-da-leide.vercel.app/"
+                link="https://leidebolos.site/"
                 target="_blank"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/Confeitaria-da-Leide"
@@ -206,16 +212,53 @@ const projects = () => {
 
             <div className="col-span-12">
               <FeaturedProject
-                title="Confeitaria da Leide"
-                summary="Descricao previa do projeto."
-                link="https://confeitaria-da-leide.vercel.app/"
+                title="Delícias da Vânia"
+                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
+                
+                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
+                link="https://delicias-da-vania.vercel.app/"
                 type="Projeto em Destaque"
-                github="https://github.com/alanalveses/Confeitaria-da-Leide"
+                github="https://github.com/alanalveses/delicias-da-vania"
                 target="_blank"
-                img={project2}
+                img={projectDelicaVania}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Weathero Pokemon"
+                summary=""
+                link="https://weatherio-blue.vercel.app/#/current-location"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/weatherio"
+                target="_blank"
+                img={projectWeatheroPokemon}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Kaoak"
+                summary="Projeto"
+                link="https://kaoak.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/kaoak"
+                target="_blank"
+                img={projectKaoak}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Lud Legends"
+                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para criar um website responsivo, com o intuito de oferecer uma experiência prática e simplificada para ajudar pessoas que estão iniciando sua jornada no jogo Mobile Legends: Bang Bang.
+                
+                O website conta com uma interface intuitiva e fácil de usar, onde os usuários podem acessar informações essenciais sobre o jogo, como guias para personagens, dicas para iniciantes, estratégias de jogo e notícias atualizadas. A navegação é fluida e adaptável a diferentes dispositivos, garantindo uma experiência consistente em smartphones, tablets e computadores."
+                link="https://lud-legends.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/lud-legends"
+                target="_blank"
+                img={project1}
+              />
+            </div>
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Fokus"
                 summary="Projeto de pomodoro para estudos."
@@ -225,7 +268,7 @@ const projects = () => {
                 target="_blank"
                 img={project4}
               />
-            </div>
+            </div> */}
           </div>
           <SideBar />
         </Layout>
