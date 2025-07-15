@@ -34,7 +34,7 @@ function ColorsCircle() {
               "#121212",
             ],
             scale: 1.7,
-            transition: { duration: 3, repeat: Infinity },
+            transition: { duration: 3,},
           }}
         >
           <ArrowIcon />

@@ -1,41 +1,71 @@
 import Link from "next/link";
-import React from "react";
-import { motion } from "framer-motion";
-import logoRedu from "../../../public/images/logo-redu.png";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import logoRedu from "../../../public/images/logo-redu.png";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
-const MotionLink = motion(Link);
-
 const Logo = () => {
+  const [bg, setBg] = useState("");
+  const intervalRef = useRef(null);
+  const indexRef = useRef(0);
+
+  const images = [
+    "/images/svgs/mobile-development.svg",
+    "/images/svgs/web-development.svg",
+    "/images/svgs/html5.svg",
+    "/images/svgs/javascript.svg",
+    "/images/svgs/react.svg",
+    "/images/svgs/node.svg",
+    "/images/svgs/next.svg",
+    "/images/svgs/tailwind.svg",
+    "/images/svgs/github.svg",
+  ];
+
+  const startImageCycle = () => {
+    if (intervalRef.current) return; // Impede múltiplos intervalos
+
+    setBg(images[0]);
+    indexRef.current = 1;
+
+    intervalRef.current = setInterval(() => {
+      setBg(images[indexRef.current]);
+      indexRef.current = (indexRef.current + 1) % images.length;
+    }, 1000);
+  };
+
+  const stopImageCycle = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = null;
+    setBg("");
+  };
+
+  useEffect(() => {
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
+  const [mode] = useThemeSwitcher();
+
   return (
     <div className="flex items-center justify-center mt-2 xl:hidden lg:flex">
-      <MotionLink
+      <Link
         href="/"
-        className="w-16 h-16 text-light flex items-center justify-center rounded-full text-2x1 font-bold border border-solid border-transparent bg-dark dark:bg-light dark:border-light"
-        whileHover={{
-          backgroundColor: [
-            "#121212",
-            "rgba(131,58,180,1)",
-            "rgba(0, 0, 255, 1)",
-            "rgba(0, 216, 255, 1)",
-            "rgba(253,29,29,1)",
-            "rgba(255, 0, 0, 1)",
-            "rgba(255, 90, 0, 1)",
-            "rgba(252,176,69,1)",
-            "rgba(131,58,180,1)",
-            "rgba(245, 40, 145, 0.8)",
-            "rgba(255, 0, 154, 1)",
-            "rgba(255, 0, 255, 1)",
-            "rgba(169, 255, 34, 1)",
-            "rgba(46, 255, 154, 1)",
-            "#121212",
-          ],
-          transition: { duration: 2, repeat: Infinity },
+        onMouseEnter={startImageCycle}
+        onMouseLeave={stopImageCycle}
+        className="w-16 h-16 flex items-center justify-center rounded-full overflow-hidden border border-solid border-transparent bg-dark dark:bg-light"
+        style={{
+          backgroundImage: bg ? `url(${bg})` : "none",
+          backgroundSize: "60% 60%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          filter: mode === "dark" ? "invert(1)" : "invert(0)",
         }}
       >
-        <Image src={logoRedu} alt={"Logo"} className="p-1 w-full h-auto" />
-      </MotionLink>
+        <Image
+          src={logoRedu}
+          alt={"Logo"}
+          className="p-1 w-full h-auto z-10 relative"
+        />
+      </Link>
     </div>
   );
 };
