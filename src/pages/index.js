@@ -80,7 +80,7 @@ export default function Home() {
             />
           </div>
 
-          <Differeciales />
+          <Differeciales  />
 
           <div className="w-full relative py-10 px-20 mt-24 mb-20 flex items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light lg:px-10 sm:-ml-4">
             <div

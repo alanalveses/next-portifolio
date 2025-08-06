@@ -175,6 +175,14 @@ const projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
+          <p className="text-base font-medium">
+              Nesta seção, apresento alguns dos projetos que desenvolvi ao longo da minha jornada como desenvolvedor. Cada um deles foi pensado para resolver um problema real, conectar marcas ao seu público e explorar ao máximo o potencial das tecnologias modernas.
+          
+              </p>
+          <p className="mb-12 text-base font-medium">
+              Você encontrará desde sites institucionais até jogos interativos desenvolvidos com JavaScript puro, todos com design responsivo e foco em usabilidade. Role para conhecer melhor cada trabalho e entender como posso ajudar a transformar sua ideia em realidade.
+              </p>
+
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2 xs:mr-2">
             <div className="col-span-12">
               <FeaturedProject
@@ -333,9 +341,9 @@ const projects = () => {
               <Project
                 title="Nerd Hub"
                 summary="Projeto NerdHub."
-                link="https://github.com/alanalveses/nerdhub"
+                link="https://nerd-hub.vercel.app/"
                 type="Projeto em Destaque"
-                github="https://nerd-hub.vercel.app/"
+                github="https://github.com/alanalveses/nerdhub"
                 target="_blank"
                 img={projectNerdHub}
               />
@@ -344,9 +352,9 @@ const projects = () => {
               <Project
                 title="Lojinha de Doces"
                 summary="Projeto de pomodoro para estudos."
-                link="https://github.com/alanalveses/lojinha-doces"
+                link="https://lojinha-doces.vercel.app/"
                 type="Projeto em Destaque"
-                github="https://lojinha-doces.vercel.app/"
+                github="https://github.com/alanalveses/lojinha-doces"
                 target="_blank"
                 img={projectLojinhaDoces}
               />

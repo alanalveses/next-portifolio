@@ -117,7 +117,7 @@ export default function Contact() {
             </motion.div>
 
             <motion.div
-              className="flex-1 flex flex-col leading-11 mt-6 relative"
+              className="flex-1 flex flex-col leading-11 mt-6 relative pl-2"
               variants={variants}
             >
               <motion.div
@@ -146,7 +146,7 @@ export default function Contact() {
               >
                 <motion.input
                   variants={variants}
-                  className="p-5 bg-transparent border border-white text-black  dark:text-light rounded-lg"
+                  className="p-5 bg-transparent border border-black text-black  dark:text-light rounded-lg"
                   type="text"
                   required
                   placeholder="Seu Nome"
@@ -154,7 +154,7 @@ export default function Contact() {
                 ></motion.input>
                 <motion.input
                   variants={variants}
-                  className="p-5 bg-transparent border border-white text-black dark:text-light rounded-lg"
+                  className="p-5 bg-transparent border border-black text-black dark:text-light rounded-lg"
                   type="text"
                   required
                   placeholder="E-mail"
@@ -162,7 +162,7 @@ export default function Contact() {
                 ></motion.input>
                 <motion.textarea
                   variants={variants}
-                  className="p-5 bg-transparent border border-white text-black dark:text-light rounded-lg"
+                  className="p-5 bg-transparent border border-black text-black dark:text-light rounded-lg"
                   required
                   placeholder="Mensagem"
                   rows={5}
