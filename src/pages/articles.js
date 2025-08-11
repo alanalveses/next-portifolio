@@ -1,4 +1,4 @@
-import AnimatedText from "@/components/global/AnimatedText";
+import AnimatedText from "@/components/Global/AnimatedText";
 import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,8 +7,8 @@ import Link from "next/link";
 import article1 from "../../public/images/articles/article-graduacao.jpg";
 import article2 from "../../public/images/articles/display.jpg";
 import { motion } from "framer-motion";
-import ColorsCircle from "@/components/global/ColorsCircle";
-import ArticlesList from "../components/articles/ArticlesList";
+import ColorsCircle from "@/components/Global/ColorsCircle";
+import ArticlesList from "../components/Articles/ArticlesList";
 
 const FramerImage = motion(Image);
 

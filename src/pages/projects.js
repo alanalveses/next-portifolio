@@ -1,4 +1,4 @@
-import AnimatedText from "@/components/global/AnimatedText";
+import AnimatedText from "@/components/Global/AnimatedText";
 import { GithubIcon } from "@/components/global/Icons";
 import Layout from "@/components/global/Layout";
 import Head from "next/head";
@@ -14,8 +14,8 @@ import projectWeatheroPokemon from "../../public/images/projects/weathero-pokemo
 import projectNerdHub from "../../public/images/projects/nerd-hub.jpg";
 import projectKaoak from "../../public/images/projects/kaoak.jpg";
 import projectLojinhaDoces from "../../public/images/projects/lojinha-doces.jpg";
-import SideBar from "@/components/footer/SideBar";
-import ColorsCircle from "@/components/global/ColorsCircle";
+import SideBar from "@/components/Footer/SideBar";
+import ColorsCircle from "@/components/Global/ColorsCircle";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);

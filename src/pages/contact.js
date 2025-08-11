@@ -1,4 +1,4 @@
-import AnimatedText from "@/components/global/AnimatedText";
+import AnimatedText from "@/components/Global/AnimatedText";
 import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import { motion, useInView } from "framer-motion";
@@ -13,7 +13,7 @@ import {
 } from "@/components/global/Icons";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import ColorsCircle from "@/components/global/ColorsCircle";
+import ColorsCircle from "@/components/Global/ColorsCircle";
 
 const variants = {
   initial: {

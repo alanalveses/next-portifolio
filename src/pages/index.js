@@ -3,13 +3,14 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
-import AnimatedText from "@/components/global/AnimatedText";
+import AnimatedText from "@/components/Global/AnimatedText";
 import { LinkArrow } from "@/components/global/Icons";
 
 import ContactShortcut from "@/components/home/ContactShortcut";
-import ColorsCircle from "@/components/global/ColorsCircle";
-import Differeciales from "@/components/home/Differeciales";
-import Quote from "@/components/home/Quote";
+import ColorsCircle from "@/components/Global/ColorsCircle";
+import Differeciales from "@/components/Home/Differeciales";
+import Quote from "@/components/Home/Quote";
+import CallToAction from "@/components/Global/CallToAction";
 
 export default function Home() {
   return (
@@ -32,11 +33,11 @@ export default function Home() {
                 e de fácil utilização. Conto com um amplo conjunto de
                 habilidades, com proficiência em HTML, CSS e JavaScript.
                 Atualmente, atuo como freelancer, concentrando-me principalmente
-                no desenvolvimento web utilizando React.js.
+                no desenvolvimento web utilizando React.js e Next.js.
               </p>
               <div className="flex items-center self-center mt-2">
                 <Link
-                  href="/AlanAlvesCV.pdf"
+                  href="/Curriculo_Alan_Alves.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-5
                 rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
@@ -80,45 +81,14 @@ export default function Home() {
             />
           </div>
 
-          <Differeciales  />
+          <Differeciales />
 
-          <div className="w-full relative py-10 px-20 mt-24 mb-20 flex items-center justify-between rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light lg:px-10 sm:-ml-4">
-            <div
-              className="absolute top-1 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-                rounded-br-3xl"
-            />
-            <div
-              className="absolute top-3 -right-5 -z-20 w-[102%] h-[103%] rounded-[2rem] bg-gray-700 
-                rounded-br-3xl"
-            />
-            <div
-              className="absolute top-5 -right-7 -z-30 w-[102%] h-[103%] rounded-[2rem] bg-gray-600 
-                rounded-br-3xl"
-            />
-            <div
-              className="absolute top-7 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 
-                rounded-br-3xl"
-            />
-
-            <div className="px-20 lg:px-14 md:px-0">
-              <h3 className="text-dark dark:text-light text-4xl font-medium md:text-2xl xs:text-xl">
-                Você se Interessou?
-              </h3>
-              <p className=" text-dark dark:text-light text-lg md:text-sm xs:text-xs">
-                Tem algum pojeto a ser construido?
-              </p>
-            </div>
-            <Link
-              href="/contact"
-              className="flex items-center bg-dark text-light p-2.5 px-5
-                rounded-lg text-base font-semibold text-nowrap hover:bg-light hover:text-dark
-                border-2 border-solid border-transparent hover:border-dark
-                dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-                md:ml-4 sm:text-xs xs:text-wrap xs:text-center"
-            >
-              Vamos Trabalhar Juntos!
-            </Link>
-          </div>
+          <CallToAction
+            title="Gostou do que viu?"
+            subtitle="Vamos criar algo incrível juntos."
+            buttonText="Entre em Contato"
+            link="/contact"
+          />
         </Layout>
 
         <ContactShortcut />

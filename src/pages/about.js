@@ -1,13 +1,14 @@
-import AnimatedText from "@/components/global/AnimatedText";
+import AnimatedText from "@/components/Global/AnimatedText";
 import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-dev.jpg";
-import Education from "@/components/about/Education";
-import SoftSkills from "@/components/about/SoftSkills";
-import ColorsCircle from "@/components/global/ColorsCircle";
-import Certificates from "@/components/about/Certificates";
-import HardSkills from "@/components/about/HardSkills";
+import Education from "@/components/About/Education";
+import SoftSkills from "@/components/About/SoftSkills";
+import ColorsCircle from "@/components/Global/ColorsCircle";
+import Certificates from "@/components/About/Certificates";
+import HardSkills from "@/components/About/HardSkills";
+import CallToAction from "@/components/Global/CallToAction";
 
 const about = () => {
   return (
@@ -73,7 +74,14 @@ const about = () => {
           <SoftSkills />
           <HardSkills />
           <Education />
-          <Certificates />
+          <Certificates limit={2} />
+           <CallToAction
+              title="Quer ver mais dos meus conhecimentos?"
+              subtitle="Veja mais alguns dos meus certificados."
+              buttonText="Ver certificados"
+              link="/certificates"
+            />
+
         </Layout>
         <ColorsCircle />
       </main>
