@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/Global/AnimatedText";
-import { GithubIcon } from "@/components/global/Icons";
+import { GithubIcon } from "@/components/Global/Icons";
 import Layout from "@/components/global/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,6 +12,8 @@ import projectSorriaMais from "../../public/images/projects/sorria-mais.jpg";
 import projectDelicaVania from "../../public/images/projects/delicias-vania.jpg";
 import projectWeatheroPokemon from "../../public/images/projects/weathero-pokemon.jpg";
 import projectNerdHub from "../../public/images/projects/nerd-hub.jpg";
+import projectChaRevelacao from "../../public/images/projects/cha-revelacao-next.jpg";
+import projectConviteSafari from "../../public/images/projects/convite-safari.jpg";
 import projectKaoak from "../../public/images/projects/kaoak.jpg";
 import projectLojinhaDoces from "../../public/images/projects/lojinha-doces.jpg";
 import SideBar from "@/components/Footer/SideBar";
@@ -176,14 +178,20 @@ const projects = () => {
           />
 
           <p className="text-base font-medium">
-              Nesta seção, apresento alguns dos projetos que desenvolvi ao longo da minha jornada como desenvolvedor. Cada um deles foi pensado para resolver um problema real, conectar marcas ao seu público e explorar ao máximo o potencial das tecnologias modernas.
-          
-              </p>
+            Nesta seção, apresento alguns dos projetos que desenvolvi ao longo
+            da minha jornada como desenvolvedor. Cada um deles foi pensado para
+            resolver um problema real, conectar marcas ao seu público e explorar
+            ao máximo o potencial das tecnologias modernas.
+          </p>
           <p className="mb-12 text-base font-medium">
-              Você encontrará desde sites institucionais até jogos interativos desenvolvidos com JavaScript puro, todos com design responsivo e foco em usabilidade. Role para conhecer melhor cada trabalho e entender como posso ajudar a transformar sua ideia em realidade.
-              </p>
+            Você encontrará desde sites institucionais até jogos interativos
+            desenvolvidos com JavaScript puro, todos com design responsivo e
+            foco em usabilidade. Role para conhecer melhor cada trabalho e
+            entender como posso ajudar a transformar sua ideia em realidade.
+          </p>
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:p-2 xs:mr-2">
+            {/* Sorria + */}
             <div className="col-span-12">
               <FeaturedProject
                 title="Sorria +"
@@ -222,6 +230,7 @@ const projects = () => {
                 img={projectSorriaMais}
               />
             </div>
+            {/* Leide Bolos */}
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Leide Bolos"
@@ -233,6 +242,74 @@ const projects = () => {
                 img={project2}
               />
             </div>
+            {/* Convite Chá de Fralda */}
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Convite Chá de Fralda"
+                summary="Descricao previa do projeto."
+                link="https://cha-revelacao-rust.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/cha-revelacao-next"
+                img={projectChaRevelacao}
+              />
+            </div>
+            {/* Convite Safari */}
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Convite Aniversário"
+                summary={
+                  <>
+                    <p>
+                      Convite de aniversário infantil com tema Safari,
+                      desenvolvido em Next.js e Tailwind CSS. O projeto segue a
+                      abordagem mobile first, garantindo uma ótima experiência
+                      em dispositivos móveis, além de contar com animações
+                      interativas, layout totalmente responsivo e integração com
+                      Google Sheets para gerenciamento de confirmações (RSVP).
+                    </p>
+
+                    <p>
+                      Durante o desenvolvimento, foram aplicados princípios de
+                      metodologias ágeis, com comunicação diária com o cliente
+                      por meio de reuniões rápidas (daily scrum). As alterações
+                      solicitadas foram implementadas de forma iterativa até
+                      alcançar o resultado final esperado.
+                    </p>
+                  </>
+                }
+                link="https://convite-safari.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/convite-safari"
+                target="_blank"
+                img={projectConviteSafari}
+              />
+            </div>
+
+            {/* Lud Legends */}
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Lud Legends"
+                summary="Projeto desenvolvido com HTML, CSS e JavaScript puros para
+                      criar um website responsivo, com o intuito de oferecer uma
+                      experiência prática e simplificada para ajudar pessoas que
+                      estão iniciando sua jornada no jogo Mobile Legends: Bang
+                      Bang.
+                      O website conta com uma interface intuitiva e fácil de
+                      usar, onde os usuários podem acessar informações
+                      essenciais sobre o jogo, como guias para personagens,
+                      dicas para iniciantes, estratégias de jogo e notícias
+                      atualizadas. A navegação é fluida e adaptável a diferentes
+                      dispositivos, garantindo uma experiência consistente em
+                      smartphones, tablets e computadores."
+                link="https://lud-legends.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/lud-legends"
+                target="_blank"
+                img={project1}
+              />
+            </div>
+
+            {/* Anime Lud */}
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Anime Lud"
@@ -285,58 +362,7 @@ const projects = () => {
                 img={projectDelicaVania}
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Weathero Pokémon"
-                summary=""
-                link="https://weatherio-blue.vercel.app/#/current-location"
-                type="Projeto em Destaque"
-                github="https://github.com/alanalveses/weatherio"
-                target="_blank"
-                img={projectWeatheroPokemon}
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Kaoak"
-                summary="Projeto"
-                link="https://kaoak.vercel.app/"
-                type="Projeto em Destaque"
-                github="https://github.com/alanalveses/kaoak"
-                target="_blank"
-                img={projectKaoak}
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Lud Legends"
-                summary={
-                  <>
-                    <p>
-                      Projeto desenvolvido com HTML, CSS e JavaScript puros para
-                      criar um website responsivo, com o intuito de oferecer uma
-                      experiência prática e simplificada para ajudar pessoas que
-                      estão iniciando sua jornada no jogo Mobile Legends: Bang
-                      Bang.
-                    </p>
-                    <p>
-                      O website conta com uma interface intuitiva e fácil de
-                      usar, onde os usuários podem acessar informações
-                      essenciais sobre o jogo, como guias para personagens,
-                      dicas para iniciantes, estratégias de jogo e notícias
-                      atualizadas. A navegação é fluida e adaptável a diferentes
-                      dispositivos, garantindo uma experiência consistente em
-                      smartphones, tablets e computadores.
-                    </p>
-                  </>
-                }
-                link="https://lud-legends.vercel.app/"
-                type="Projeto em Destaque"
-                github="https://github.com/alanalveses/lud-legends"
-                target="_blank"
-                img={project1}
-              />
-            </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Nerd Hub"
@@ -348,17 +374,42 @@ const projects = () => {
                 img={projectNerdHub}
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Lojinha de Doces"
-                summary="Projeto de pomodoro para estudos."
+                title="Weathero Pokémon"
+                summary=""
+                link="https://weatherio-blue.vercel.app/#/current-location"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/weatherio"
+                target="_blank"
+                img={projectWeatheroPokemon}
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Kaoak"
+                summary="Projeto"
+                link="https://kaoak.vercel.app/"
+                type="Projeto em Destaque"
+                github="https://github.com/alanalveses/kaoak"
+                target="_blank"
+                img={projectKaoak}
+              />
+            </div>
+
+            {/* <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Convite Safari"
+                summary="Convite de aniversário infantil com tema Safari, desenvolvido em Next.js e Tailwind CSS. O projeto conta com animações divertidas, layout responsivo e integração de formulário RSVP com Google Sheets."
                 link="https://lojinha-doces.vercel.app/"
                 type="Projeto em Destaque"
                 github="https://github.com/alanalveses/lojinha-doces"
                 target="_blank"
                 img={projectLojinhaDoces}
               />
-            </div>
+            </div> */}
           </div>
           <SideBar />
         </Layout>

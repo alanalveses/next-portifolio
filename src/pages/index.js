@@ -4,9 +4,9 @@ import Image from "next/image";
 import profilePic from "../../public/images/profile/profile-dev.jpg";
 import Link from "next/link";
 import AnimatedText from "@/components/Global/AnimatedText";
-import { LinkArrow } from "@/components/global/Icons";
+import { LinkArrow } from "@/components/Global/Icons";
 
-import ContactShortcut from "@/components/home/ContactShortcut";
+import ContactShortcut from "@/components/Home/ContactShortcut";
 import ColorsCircle from "@/components/Global/ColorsCircle";
 import Differeciales from "@/components/Home/Differeciales";
 import Quote from "@/components/Home/Quote";

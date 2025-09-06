@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularText } from "../global/Icons";
+import { CircularText } from "../Global/Icons";
 import Link from "next/link";
 
 const ContactShortcut = ({ link = "/contact", title = "Fale Comigo" }) => {

@@ -16,7 +16,7 @@ const CallToAction = ({
       <div className="absolute top-7 -right-9 -z-40 w-[102%] h-[103%] rounded-[2rem] bg-gray-300 rounded-br-3xl" />
 
       <div className="px-20 lg:px-14 md:px-0">
-        <h3 className="text-dark dark:text-light text-4xl font-medium md:text-2xl xs:text-xl">
+        <h3 className="text-dark dark:text-light text-4xl font-medium md:text-2xl xs:text-sm">
           {title}
         </h3>
         <p className="text-dark dark:text-light text-lg md:text-sm xs:text-xs">
