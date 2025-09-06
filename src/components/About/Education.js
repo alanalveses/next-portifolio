@@ -73,12 +73,6 @@ const Education = () => {
             place="Escola de Tecnologia Alura"
             info="Durante o curso de UX Design, explorei os princípios essenciais da experiência do usuário, aprendendo a projetar interfaces intuitivas e funcionais. Compreendi a importância da pesquisa, prototipagem e teste de usabilidade para criar soluções digitais eficazes. A jornada no UX Design me capacitou a projetar produtos que oferecem experiências memoráveis e satisfatórias aos usuários."
           />
-          <Details
-            type="Desenvolvimento de App com React Native"
-            time="2024-2024"
-            place="Escola de Tecnologia Alura"
-            info="Durante o curso de Desenvolvimento de Aplicativos com React Native, adquiri habilidades fundamentais para criar aplicativos móveis eficientes e funcionais. Obtive conceitos essenciais de programação com React Native, interfaces de usuário e integração de APIs."
-          />
         </ul>
       </div>
     </div>

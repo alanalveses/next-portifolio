@@ -230,6 +230,7 @@ const projects = () => {
                 img={projectSorriaMais}
               />
             </div>
+
             {/* Leide Bolos */}
             <div className="col-span-6 sm:col-span-12">
               <Project
@@ -242,6 +243,7 @@ const projects = () => {
                 img={project2}
               />
             </div>
+
             {/* Convite Chá de Fralda */}
             <div className="col-span-6 sm:col-span-12">
               <Project
@@ -253,6 +255,7 @@ const projects = () => {
                 img={projectChaRevelacao}
               />
             </div>
+
             {/* Convite Safari */}
             <div className="col-span-12">
               <FeaturedProject
@@ -321,6 +324,7 @@ const projects = () => {
               />
             </div>
 
+            {/* Delícias da Vânia */}
             <div className="col-span-12">
               <FeaturedProject
                 title="Delícias da Vânia"
@@ -362,7 +366,7 @@ const projects = () => {
                 img={projectDelicaVania}
               />
             </div>
-
+            {/* Nerd Hub */}
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Nerd Hub"
@@ -374,7 +378,7 @@ const projects = () => {
                 img={projectNerdHub}
               />
             </div>
-
+            {/* Weathero Pokémon */}
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Weathero Pokémon"
@@ -386,7 +390,7 @@ const projects = () => {
                 img={projectWeatheroPokemon}
               />
             </div>
-
+            {/* Kaoak */}
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Kaoak"

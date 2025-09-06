@@ -9,6 +9,10 @@ import {
   EmailIcon,
   TelephoneIconLight,
   EmailIconLight,
+  PinterestIcon,
+  WhatsAppIcon,
+  LinkedInIcon,
+  GithubIcon,
 } from "../global/Icons";
 import { motion } from "framer-motion";
 
@@ -22,35 +26,60 @@ function Footer() {
     >
       <Layout className="py-8 flex items-center justify-between sm:flex-col">
         <div className="flex items-center justify-center flex-col pl-20 sm:pl-0 sm:pb-6">
-          <h2 className="text-base sm:text-lg">Mais Redes Sociais</h2>
+          <h2 className="text-base sm:text-lg">Redes Sociais</h2>
           <div className="flex items-center mt-3">
+            
+
+            <motion.a
+              href="https://github.com/alanalveses"
+              target={"_blank"}
+              className="w-7 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <GithubIcon />
+            </motion.a>
+
+            <motion.a
+              href="https://www.linkedin.com/in/alanalveses/"
+              target={"_blank"}
+              className="w-6 mx-3 sm:mx-1"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <LinkedInIcon />
+            </motion.a>
+
+            <motion.a
+              href=""
+              target={"_blank"}
+              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <PinterestIcon />
+            </motion.a>
+
+            <motion.a
+              href="https://wa.me/5511992668420?text=%20Olá,%20estava%20em%20seu%20site%20fiquei%20interessado%20em%20um%20de%20seus%20serviços!"
+              target={"_blank"}
+              className="w-8 mx-3 sm:mx-1"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <WhatsAppIcon />
+            </motion.a>
+
             <motion.a
               href="https://www.instagram.com/alanalveses/"
               target={"_blank"}
-              className="w-6 mx-3"
+              className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
               <InstagramIcon />
             </motion.a>
-            <motion.a
-              href="https://web.facebook.com/LastLineLove"
-              target={"_blank"}
-              className="w-8 mx-3"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FacebookIcon />
-            </motion.a>
-            <motion.a
-              href="https://x.com/alanalveses"
-              target={"_blank"}
-              className="w-6 mx-3"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <TwitterIcon />
-            </motion.a>
+
           </div>
         </div>
 

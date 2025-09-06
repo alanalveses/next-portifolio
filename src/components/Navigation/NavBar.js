@@ -1,18 +1,24 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   CodeIcon,
   DarthVader,
+  DjRepo,
   GearIcon,
   GithubIcon,
+  Guitar,
   LinkedInIcon,
   MoonIcon,
+  MusicDesk,
+  Piano,
   PinterestIcon,
   Pokeball,
+  SpeakerDisable,
   SpiderMan,
   SpiritedAway,
   SunIcon,
+  Violin,
   WhatsAppIcon,
 } from "../global/Icons";
 import { motion } from "framer-motion";
@@ -85,6 +91,21 @@ const NavBar = () => {
     setCursorType(type);
   };
 
+  const audioRef = useRef(null);
+
+  const playMusic = (src) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+
+    const audio = new Audio(src);
+    audio.loop = true;
+    audio.volume = 0.5;
+    audio.play();
+
+    audioRef.current = audio;
+  };
+
   return (
     <>
       <header className="w-full px-32 py-8 font-medium flex items-center justify-between relative top-0 z-50 bg-light dark:bg-dark dark:text-light lg:px-16 md:px-12 sm:px-8 ">
@@ -110,8 +131,8 @@ const NavBar = () => {
         </button>
 
         <div className="w-full flex justify-between items-center lg:hidden">
-          <nav className="flex items-center justify-center flex-wrap">
-            <motion.a
+          <nav className="flex items-center justify-center flex-wrap absolute left-[85%] top-8">
+            {/* <motion.a
               href="https://github.com/alanalveses"
               target={"_blank"}
               className="w-7 mr-3"
@@ -149,7 +170,7 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <PinterestIcon />
-            </motion.a>
+            </motion.a> */}
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -175,45 +196,87 @@ const NavBar = () => {
               <GearIcon />
             </motion.button>
           </nav>
+
           {dropdownOpen && (
-            <div className="absolute top-20 left-72 w-auto bg-gray-200 p-5 dark:text-light dark:bg-gray-800 rounded-lg">
-              <h3 className="text-center mx-10 mb-4">Personalizar Cursor</h3>
-              <div className="flex justify-between">
-                <button
-                  className="w-10 border border-black dark:border-light rounded-full bg-spiritedAwayColor"
-                  onClick={() => handleCursorChange("spiritedAway")}
-                >
-                  <SpiritedAway />
-                </button>
-                <button
-                  className="w-10 border border-black dark:border-light rounded-full"
-                  onClick={() => handleCursorChange("dartVader")}
-                >
-                  <DarthVader />
-                </button>
-                <button
-                  className="w-10 border border-black dark:border-light rounded-full"
-                  onClick={() => handleCursorChange("spiderMan")}
-                >
-                  <SpiderMan />
-                </button>
-                <button
-                  className="w-10 border border-black dark:border-light rounded-full"
-                  onClick={() => handleCursorChange("pokemon")}
-                >
-                  <Pokeball />
-                </button>
-                <button
-                  className="w-10 border border-black dark:border-light rounded-full text-textCursor"
-                  onClick={() => handleCursorChange("none")}
-                >
-                  Sem Cursor
-                </button>
+            <>
+              <div className="absolute top-20 right-2 w-auto bg-gray-200 p-5 dark:text-light dark:bg-gray-800 rounded-lg">
+                <h3 className="text-center mx-10 mb-4">Personalizar Cursor</h3>
+                <div className="flex justify-between">
+                  <button
+                    className="w-10 border border-black dark:border-light rounded-full bg-spiritedAwayColor"
+                    onClick={() => handleCursorChange("spiritedAway")}
+                  >
+                    <SpiritedAway />
+                  </button>
+                  <button
+                    className="w-10 overflow-hidden border border-black dark:border-light rounded-full"
+                    onClick={() => handleCursorChange("dartVader")}
+                  >
+                    <DarthVader />
+                  </button>
+                  <button
+                    className="w-10 border border-black dark:border-light rounded-full"
+                    onClick={() => handleCursorChange("spiderMan")}
+                  >
+                    <SpiderMan />
+                  </button>
+                  <button
+                    className="w-10 border border-black dark:border-light rounded-full"
+                    onClick={() => handleCursorChange("pokemon")}
+                  >
+                    <Pokeball />
+                  </button>
+                  <button
+                    className="w-10 border border-black dark:border-light rounded-full text-textCursor"
+                    onClick={() => handleCursorChange("none")}
+                  >
+                    Sem Cursor
+                  </button>
+                </div>
+
+                <h3 className="text-center mx-10 m-4">Tocar Música de Fundo</h3>
+                <div className="flex justify-between">
+                  <button
+                    className="w-10 overflow-hidden border border-black dark:border-light rounded-full bg-spiritedAwayColor"
+                    onClick={() => playMusic("sounds/in-the-end.mp3")}
+                  >
+                    <Piano className={"p-1"} />
+                  </button>
+                  <button
+                    className="w-10 overflow-hidden border border-black dark:border-light rounded-full"
+                    onClick={() => playMusic("sounds/nocturn-violin.mp3")}
+                  >
+                    <Violin className={"p-1"} />
+                  </button>
+                  <button
+                    className="w-10 overflow-hidden border border-black dark:border-light rounded-full"
+                    onClick={() => playMusic("sounds/birds-of-a-feather.mp3")}
+                  >
+                    <DjRepo className={"p-1"} />
+                  </button>
+                  <button
+                    className="w-10 overflow-hidden border border-black dark:border-light rounded-full"
+                    onClick={() => playMusic("sounds/faint.mp3")}
+                  >
+                    <Guitar className={"p-1"} />
+                  </button>
+                  <button
+                    className="w-10 h-10 overflow-hidden border border-black dark:border-light rounded-full text-textCursor flex items-center justify-center"
+                    onClick={() => {
+                      if (audioRef.current) {
+                        audioRef.current.pause();
+                        audioRef.current = null;
+                      }
+                    }}
+                  >
+                    <SpeakerDisable className={""}/>
+                  </button>
+                </div>
               </div>
-            </div>
+            </>
           )}
 
-          <nav>
+          <nav className="absolute left-[50%] top-12">
             <CustomLink href="/" title="Home" className="mr-4" />
             <CustomLink href="/about" title="Sobre" className="mx-4" />
             <CustomLink href="/projects" title="Projetos" className="mx-4" />
@@ -222,7 +285,7 @@ const NavBar = () => {
             {/* <CustomLink href="/more" title="Mais" className="ml-4" /> */}
           </nav>
 
-          <div className="absolute left-[50%] top-2 translate-x-[-50%] bg-transparent">
+          <div className="absolute left-[13%] top-4 translate-x-[-50%] bg-transparent">
             <Logo />
           </div>
         </div>
