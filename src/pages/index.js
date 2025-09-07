@@ -17,25 +17,35 @@ export default function Home() {
     <>
       <Head>
         <title>Alan Alves - Desenvolvedor Web</title>
-        <meta name="description" content="Portfólio de Alan Alves, desenvolvedor web especializado em React.js e Next.js." />
-        
-        <meta name="author" content="Alan Alves" />
-        <meta name="keywords" content="desenvolvedor web, portfólio, React, Next.js, front-end" />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Portfólio de Alan Alves, desenvolvedor web especializado em React.js e Next.js."
+        />
 
-        <meta property="og:title" content="Alan Alves - Desenvolvedor Web" />
-        <meta property="og:description" content="Portfólio de Alan Alves, especializado em desenvolvimento web e experiência do usuário." />
-        <meta property="og:image" content="/images/profile/avatar.jpg" />
-        <meta property="og:url" content="https://www.alanalves.site" />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content="Alan Alves - Desenvolvedor Web" />
+        <meta
+          property="og:description"
+          content="Portfólio de Alan Alves, especializado em desenvolvimento web e experiência do usuário."
+        />
+        <meta
+          property="og:image"
+          content="https://www.alanalves.site/images/profile/avatar.jpg"
+        />
+        <meta property="og:url" content="https://www.alanalves.site" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Alan Alves - Desenvolvedor Web" />
-        <meta name="twitter:description" content="Portfólio de Alan Alves, especializado em desenvolvimento web e experiência do usuário." />
-        <meta name="twitter:image" content="/images/profile/avatar.jpg" />
+        <meta
+          name="twitter:description"
+          content="Portfólio de Alan Alves, especializado em desenvolvimento web e experiência do usuário."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.alanalves.site/images/profile/avatar.jpg"
+        />
       </Head>
+
       <main className="flex items-center text-dark dark:text-light w-full min-h-screen">
         <Layout className="pt-24">
           <div className="flex items-center justify-between w-full lg:flex-col">
