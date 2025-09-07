@@ -21,7 +21,7 @@ export default function Home() {
           name="description"
           content="Portfólio de Alan Alves, desenvolvedor web especializado em React.js e Next.js."
         />
-
+        
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Alan Alves - Desenvolvedor Web" />
         <meta
